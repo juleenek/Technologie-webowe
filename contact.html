@@ -9,23 +9,34 @@
       href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Montserrat:wght@500&family=Orbitron:wght@500&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="paw.png" type="image/x-icon" />
   </head>
   <body>
     <div id="main">
-      <div class="content" id="header">
+      <div id="header">
         <a href="index.html"><span id="title">Hello world!</span></a>
       </div>
       <div class="content" id="nav">
-        <ul>
-          <a href="about.html"><li>About</li></a>
-          <a href="gallery.html"><li>Gallery</li></a>
-          <a href="contact.html"><li>Contact</li></a>
-        </ul>
+        <div class="sidebar">
+          <ul>
+            <li class="nav_item"><a href="index.html">Home</a></li>
+            <hr class="hr_nav" />
+            <li class="nav_item"><a href="about.html">About</a></li>
+            <hr class="hr_nav" />
+            <li class="nav_item"><a href="gallery.html">Gallery</a></li>
+            <hr class="hr_nav" />
+            <li class="nav_item"><a href="contact.html">Contact </a></li>
+          </ul>
+        </div>
       </div>
-      <div class="content" id="text">3</div>
-      <div class="content" id="ad">4</div>
-      <div class="content" id="footer">5</div>
+      <div id="text">
+        <div class="text_content">
+        </div>
+      </div>
+      <div id="ad">4</div>
+      <div id="footer">5</div>
     </div>
   </body>
 </html>
