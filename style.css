@@ -4,14 +4,12 @@
 }
 div {
     margin: 0px;
-    padding: 20px;
-    background-color: antiquewhite;
-    border: 2px solid black;
     position: absolute; 
 }
 #main{
-    height: 100px;
-    width: 100%;
+    height: 100%;
+    width: auto;
+    position: relative;
     border: none;
     background-color: white;
     margin: 0;
@@ -22,26 +20,34 @@ div {
     top: 0;
     left: 0;
     width: 100%;
+    height: 5em;
 }
 
 #div2{
     background-color: coral;
-    top: 60px;
+    top: 5em;
     left: 0;
-    width: 20%;
-    height: 600px;
+    width: 15%;
+    height: 40em;
 }
 #div3{
     background-color: darkgoldenrod;
-    top: 60px;
-    left: 142px;
-    width: 60%;
-    height: 600px;
+    top: 5em;
+    left: 15%;
+    width: 70%;
+    height: 40em;
 }
 #div4{
     background-color: greenyellow;
-    top: 60px;
+    top: 5em;
     right: 0;
-    width: 20%;
-    height: 600px;
+    width: 15%;
+    height: 40em;
+}
+#div5{
+    left: 0;
+    top: 45em;
+    height: 5em;
+    width: 100%;
+    background-color: cornflowerblue;
 }
