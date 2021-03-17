@@ -40,8 +40,11 @@ a:hover {
   color: black;
   height: auto;
   padding-top: 2em;
-  background: linear-gradient(to right, #CCC, #ffe499 #ffc526);
 }
+/* #animated{
+   Tu zrobie jakąś animacje 
+} */
+
 #title:hover{
   color: rgb(255, 197, 38);
 }
