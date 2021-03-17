@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#header-bar{
+    width: 100%;
+    height: 10px;
+    background-color: #252d26;
+}
+#main{
+    width: 900px;
+    background-color: bisque;
+}
+#header{
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+}
+#nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+.nav-item{
+    padding: 0 0 0 25px;
+}
