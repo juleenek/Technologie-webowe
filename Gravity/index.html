@@ -5,25 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gravity</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com"> 
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div id="header-bar"></div>
     <div id="main">
-      <div id="header">
+      <header>
         <div id="logo"><img src="logo.jpg" alt="Gravity logo" /></div>
-        <div id="nav">
+        <nav>
           <div class="nav-item"><a href="index.html">Home</a></div>
-          <div class="nav-item"><a href="https://github.com/metaksa1">Github</a></div>
+          <div class="nav-item">
+            <a href="https://github.com/metaksa1">Github</a>
+          </div>
           <div class="nav-item"><a href="https://wsei.edu.pl">Examples</a></div>
-        </div>
-      </div>
+        </nav>
+      </header>
       <div id="ad">
         <div class="logo2">
           <img src="logo2.jpg" alt="Build beautiful websites" />
         </div>
-
         <div class="text-ad">
           <p>
             Gravity is a SASS based front end developer framework that makes
@@ -31,8 +35,28 @@
           </p>
         </div>
       </div>
-      <div id="columns"></div>
-      <div id="circle-space"></div>
+      <div class="columns"> 
+        <div class="col">
+            <h3>The lowdown</h3>
+            <p><b>Gravity is a SASS based framework for making powerful, easily maintainable HTML5 websites. It helps you rapidly prototype your ideas and will generally make your life much easier. </b>
+            <br><br>
+            There are all kinds of useful features built in, including ready made typography presets, media queries, button styles, form styling column sizing based on variables and much more. You will need to install SASS to run the framework but, to be honest, if you're not already using SASS you're really missing out.<br><br>
+            Gravity uses Slim as the primary template engine.</p>
+        </div>
+        <div class="col">
+          <h3>How to download it</h3>
+            <p>Gravity is available from Github. Simple copy the files and you're good to go. In OSX, enter the terminal and type the following: 
+            <br><br>
+            git clone http://github.com/owainlewis/Gravity-Framework.git [project-name]
+            <br><br>
+            cd [project-name]
+            <br><br>
+            rake sass</p>
+        </div>
+      </div>
+      <div id="circle-space">
+        
+      </div>
       <div id="end-text"></div>
     </div>
     <div id="footer"></div>
