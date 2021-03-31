@@ -49,6 +49,10 @@ body{
     display: flex;
     width: 102,5px;
     height: 102,5px;
+
+}
+.photo:hover{
+    opacity: 0.6;
 }
 .text{
     display: flex;
