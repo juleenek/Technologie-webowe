@@ -90,5 +90,7 @@ nav, a{
     font-size: 17px;
 }
 #end-text{
+    display: flex;
+    padding: 25px 0;
     
 }
