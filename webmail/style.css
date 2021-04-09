@@ -23,6 +23,9 @@ header{
 .msg-title-labels{
     color: #537194;
 }
+#labels-title{
+    text-transform: uppercase;
+}
 .nav-element, #labels-title, .label-element{
     padding: 8px 20px;
     margin-left: 10px;
@@ -33,4 +36,25 @@ header{
 .menu-element{
     margin-top: 10px;
 }
-
+#label-elements{
+    padding-top: 10px;
+}
+.label-element{
+    display: flex;
+}
+.color-square{
+    height: 16px;
+    width: 16px;
+    background-color: aquamarine;
+    margin-right: 10px;
+    border-radius: 2px;
+}
+#colour-p{
+    background-color: #f7ca63;
+}
+#colour-j{
+    background-color: rgb(107, 201, 181);
+}
+#colour-f{
+    background-color: rgb(104, 191, 111);
+}
