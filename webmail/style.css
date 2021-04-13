@@ -11,11 +11,26 @@ header{
     background-color: #252a3a;
     color: #d8d8d8;
     display: flex;
+    position: relative;
     flex-direction: column;
     width: 100vw;
+    padding-bottom: 30px;
+    height: 3px;
 }
-#menu-title{
+.menu-space{
+    display: none;
+    position: absolute;
+}
+.menu-title:hover .menu-space{
     display: flex;
+    flex: 1;
+}
+/* header:hover{
+    height: 420px;
+} */
+.menu-title{
+    display: flex;
+    position: relative;
     justify-content: flex-end;
     color: #3f8ad8;
     padding: 5px;
@@ -57,4 +72,14 @@ header{
 }
 #colour-f{
     background-color: rgb(104, 191, 111);
+}
+.buttom-space{
+    display: flex;
+    justify-content: center;
+}
+#buttom{
+    background-color: #1B98F8;
+    padding: 8px 16px;
+    border-radius: 20px;
+    margin: 16px;
 }
