@@ -18,16 +18,20 @@ header{
     height: 3px;
 }
 .menu-space{
+    background-color: #252a3a;
+}
+ .menu-space{
     display: none;
     position: absolute;
 }
 .menu-title:hover .menu-space{
     display: flex;
+    position: relative;
     flex: 1;
 }
-/* header:hover{
+header:hover{
     height: 420px;
-} */
+} 
 .menu-title{
     display: flex;
     position: relative;
@@ -82,4 +86,43 @@ header{
     padding: 8px 16px;
     border-radius: 20px;
     margin: 16px;
+}
+.part-mail{
+    display: flex;
+    flex-direction: column;
+}
+.mail-element{
+    display: flex;
+    padding: 14px 16px;
+    border-bottom: 1px solid #e3e3e3;
+}
+.mail-element:hover{
+    background-color: #e3e3e3;
+}
+.text-section{
+    display: flex;
+    flex-direction: column;
+}
+.avatars{
+    border-radius: 3px;
+    width: 42px;
+    height: 42px;
+    margin-right: 8px;
+}
+.name{
+    font-size: 13px;
+    color: #999;
+    text-transform: uppercase;
+}
+.title{
+    font-size: 16px;
+    color: #000000;
+}
+.short-text{
+    font-size: 13px;
+    color: #000000;
+    margin: 7px 0;
+}
+.highlight{
+    border-left: 6px solid #1B98F8;
 }
