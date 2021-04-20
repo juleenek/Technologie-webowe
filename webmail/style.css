@@ -82,6 +82,9 @@ header:hover .menu-space{
     border-radius: 20px;
     margin: 16px;
 }
+#buttom:hover{
+    background-color: #217bbf;
+}
 .part-mail{
     display: flex;
     flex-direction: column;
@@ -134,6 +137,9 @@ header:hover .menu-space{
     font-size: 16px;
     margin-top: 5px;
     margin-left: 5px;
+}
+.buttom-mail:hover{
+    background-color: #f0f0f0;
 }
 .mail-header, .mail-element{
     display: flex;
