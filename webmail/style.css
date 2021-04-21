@@ -3,9 +3,8 @@
     font-family: Arial, sans-serif;
     font-size: 16px;
 }
-body main{
-    display: flex;
-    flex-direction: column;
+main{
+    display: grid;
 }
 header{
     background-color: #252a3a;
@@ -13,18 +12,6 @@ header{
 }
 .menu-space{
     background-color: #252a3a;
-}
- .menu-space{
-    display: none;
-    position: absolute;
-    z-index: 1;
-}
-header:hover .menu-space{
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    width: 100vw;
-    padding-bottom: 30px;
 }
  
 .menu-title{
@@ -126,17 +113,19 @@ header:hover .menu-space{
 .buttom-mail-space{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row-reverse;
+    flex-direction: row;
 }
 .buttom-mail{
     display: flex;
     align-self: flex-end;
     border: 1px solid #6666;
     padding: 6px 26px;
+    width: 60px;
     border-radius: 50px;
     font-size: 16px;
     margin-top: 5px;
     margin-left: 5px;
+    justify-content: center;
 }
 .buttom-mail:hover{
     background-color: #f0f0f0;
@@ -145,10 +134,14 @@ header:hover .menu-space{
     display: flex;
     border-bottom: 1px solid #dadada;
 }
+.mail-header{
+    display: grid;
+    grid-template-columns: 1.03fr 1fr;
+}
 .header-element{
     display: flex;
     flex-direction: column;
-    padding: 30px 25px;
+    padding: 25px 25px;
 }
 .title-mail{
     font-size: 32px;
@@ -161,4 +154,40 @@ header:hover .menu-space{
 }
 .mail-content{
     padding: 35px;
+}
+@media screen and (max-width: 639px){
+    .menu-space{
+        display: none;
+        position: absolute;
+        z-index: 1;
+    }
+    header:hover .menu-space{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        width: 100vw;
+        padding-bottom: 30px;
+    }
+}
+@media screen and (min-width: 639px){
+    main{
+        grid-template-columns: 150px auto;
+    }
+    .menu-title{
+        display: none;
+    }
+    header{
+        padding-top: 40px;
+    }
+
+}
+@media screen and (min-width: 960px){
+    .mails-part{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+    .part-mail{
+        border-right: 1px solid #6666;
+        height: 100vh;
+    }
 }
