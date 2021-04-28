@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+}
+.all{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.logo{
+    width: 160px;
+    display: none;
+}
+header{
+    display: grid;
+    grid-template-columns: 20fr 1fr 1fr;
+    align-items: center;
+    padding: 18px 30px;
+    border-bottom: 1px solid #bcbcbc;
+}
+.menu-icon{
+    display: grid;
+    width: 30px;
+    height: 30px;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.menu-icon-element{
+    display: grid;
+    grid-column: 1 2;
+    width: 12px;
+    height: 12px;
+    background-color: #000000;
+    border-radius: 10%;
+}
+.icon-change{
+    background-color: #bcbcbc;
+}
+/* .menu-icon:hover > .icon-change{
+    background-color: #cbcbcb;
+    border-radius: 50%;
+    transition: border-radius 3s;
+    transition: background-color 1s;
+}*/
+.phone-icon{
+    width: 32px;
+    margin-right: 15px;
+}
+nav{ 
+    display: grid;
+    grid-template-rows: 150px repeat(7, 50px);
+    background-color:#010101;
+    height: 100vh;
+    border-left: 5px solid #bcbcbc;
+    color: white;
+    justify-content: center;
+}
+.logo-nav{
+    width: 180px;
+    justify-self: center;
+    padding: 15px 0;
+    border-bottom: 1px solid white;
+}
+.nav-element{
+    align-self: center;
+    padding: 10px 0;
+    width: 50vw;
+    padding-left: 20px;
+}
+.nav-element:hover{
+    background-color: #747474;
+    transition: background-color 0.6s;
+}
