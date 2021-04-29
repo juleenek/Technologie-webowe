@@ -87,8 +87,7 @@ header{
     display: flex;
     height: 300px;
     overflow: auto;
-    background-color: darkcyan;
-    position: fixed;
+    position:absolute;
 }
 .slide{
     width: 100vw;
@@ -121,6 +120,7 @@ header{
     border: 1px solid #9f9f9f;
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
+    margin-bottom: 15px;
 }
 .gallery-buttom > a{
     text-decoration: none;
@@ -134,3 +134,22 @@ header{
     justify-content: center;
     padding: 10px 0;
 }
+.welcome-text{
+    padding: 12px 25px;
+    box-shadow: -4px 0px 11px 4px #00000019;
+}
+#welcome-content{
+    font-size: 13px;
+}
+#welcome-title{
+    padding-bottom: 10px;
+    font-weight: 900;
+}
+.img-reference{
+    height: 300px;
+    width: 100vw;
+    object-fit:cover;   
+}
+/*.img-reference:hover, .img-reference:active{
+    filter: blur(var(--value, 1rem)); --value: 6px;
+}*/
