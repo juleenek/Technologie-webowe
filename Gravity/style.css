@@ -3,7 +3,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    font-size: 12px;
 }
 #header-bar{
     width: 100%;
@@ -60,14 +60,10 @@ nav, a{
     padding: 50px 20px;
     
 }
-.col p{
-    font-size: 12px;
-}
 #circle-space{
     display: flex;
     justify-content: center;
     padding: 60px;
-    background-color: wheat;
 }
 .circle1, .circle2, .circle3{
     width: 190px;
@@ -83,14 +79,62 @@ nav, a{
     opacity: 0.9;
 }
 #circle-space p{
-    margin-top: 45%;
-    margin-left: 40%;
     color: #ffffff;
     font-weight: bold;
     font-size: 17px;
 }
-#end-text{
+.circle{
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.end-text{
+    display: flex;
+    justify-content: space-between;
     padding: 25px 0;
+}
+.end-article{
+    width: 180px;   
+}
+.end-title{
+    border-bottom: 2px solid #b1b1b1;
+    width: 100%;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.end-text li{
+    padding-bottom: 10px;
     
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.ul-color, .tweet-link{
+    color: #2794c7;
+}
+.learnmore-text, .teets-tex{
+   line-height: 20px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    line-height: 30px;
+    padding-top: 30px;
+    text-align: center;
+    height: 150px;
+    width: 100vw;
+    background-color: #252c30;
+    color: #bcbcbc;
+}
+.zabek{
+    margin-top: 20px;
+    display: flex;
+    height: 10px;
+    width: 100vw;
+    background-image: url(zabek.jpg);
+    background-repeat: repeat-x;
+    padding: 0;
 }
