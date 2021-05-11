@@ -180,6 +180,12 @@ header{
     header{
         padding-top: 40px;
     }
+    .part-mail{
+        overflow: auto;
+        height: 35vh;
+        display: inline-block;
+        width: 100%;
+    }
 
 }
 @media screen and (min-width: 960px){
