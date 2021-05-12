@@ -4,22 +4,27 @@ main{
     height: 100vh;
 }
 #changeBox{
-    background-color: #dadaff;
+    background-color: #dae0ff;
     width: 90px;
     height: 40px;
     justify-self: end;
     align-self: center;
+    border: none;
+}
+.color{
+    box-shadow: 5px 5px 5px 0px #3a3a5176, inset 4px 4px 15px 0px #9999d376, -50px -36px 36px -2px rgba(0,0,0,0);
 }
 .cards{
     width: 200px;
     height: 200px;
     background-color: #6969a5;
     align-self: center;
-
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 .card1{
     justify-self: end;
     margin-right: 10px;
+    background-color: #9393c6;
 }
 .card2{
     justify-self: start;

@@ -18,6 +18,7 @@
       const card1 = document.querySelector(".card1");
       const card2 = document.querySelector(".card2");
       btn.addEventListener("click", () => {
+        btn.classList.toggle('color');
         card1.classList.toggle('active');
         card2.classList.toggle('active');
       });
