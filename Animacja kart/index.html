@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animacja</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+        <button id="changeBox">Change the box!</button>
+        <div class="cards card1 active"></div>
+        <div class="cards card2"></div>
+    </main>
+    <script>
+      const btn = document.querySelector("#changeBox");
+      const card1 = document.querySelector(".card1");
+      const card2 = document.querySelector(".card2");
+      btn.addEventListener("click", () => {
+        card1.classList.toggle('active');
+        card2.classList.toggle('active');
+      });
+    </script>
+  </body>
+</html>

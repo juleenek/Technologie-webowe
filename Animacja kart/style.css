@@ -1,0 +1,27 @@
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    height: 100vh;
+}
+#changeBox{
+    background-color: #dadaff;
+    width: 90px;
+    height: 40px;
+    justify-self: end;
+    align-self: center;
+}
+.cards{
+    width: 200px;
+    height: 200px;
+    background-color: #6969a5;
+    align-self: center;
+
+}
+.card1{
+    justify-self: end;
+    margin-right: 10px;
+}
+.card2{
+    justify-self: start;
+    margin-left: 10px;
+}
