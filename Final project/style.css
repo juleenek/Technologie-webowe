@@ -7,19 +7,17 @@
     margin: 0px;
     padding: 0px;
 }
-.all{
+.all, .content{
     display: grid;
-    grid-template-columns: 1fr 2fr;
 }
 .logo{
     width: 160px;
 }
 header{
-    display: grid;
-    
+    display: grid;  
     grid-template-columns: 20fr 1fr 1fr;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     padding: 18px 30px;
     border-bottom: 1px solid #bcbcbc;
 }
@@ -93,11 +91,16 @@ header{
 }
 #carouselExampleIndicators{
     margin-top: 20px;
+    width: 100vw;
+}
+.welcome{
+    display: grid;
+    padding-top: 2vh;
+    justify-self: center;
 }
 .welcome-text{
     margin-top: 20px;
-    padding: 12px 25px;
-    box-shadow: -4px 0px 11px 4px #00000019;
+    padding: 0px 25px;   
 }
 #welcome-content{
     font-size: 13px;
@@ -111,6 +114,9 @@ header{
     width: 100vw;
     object-fit:cover;  
     margin-top: 20px;
+}
+.img-reference-area{
+    display: grid;
 }
 .top-footer{
     display: flex;
@@ -143,16 +149,16 @@ header{
 .loki-dog{
     width: 200px;
     margin-bottom: -1px;
-    margin-top: -20px;
+    justify-self: end;
 }
 .end-main-text{
     display: grid;
     font-size: 19px;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
 }
 .near-loki-dog{
-    padding-top: 50px;
-    margin-left: -20px;
+    justify-self: start;
+    align-self: center;
 }
 .end-icon > a > img{
     width: 35px;
@@ -190,3 +196,22 @@ footer a:link, .inferior-footer {
     background-color: transparent; 
     text-decoration: none;
   }
+  @media (min-width: 532px){
+    .img-reference{
+        width: 70vw;
+        justify-self: center;
+    }
+  }
+  
+  @media (min-width: 768px) { 
+    .carousel-item img{
+        height: 40vh;
+    }
+    header{
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+    .welcome{
+        width: 80vw;
+    }
+   }
