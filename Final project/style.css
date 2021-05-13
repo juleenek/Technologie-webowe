@@ -102,6 +102,12 @@ header{
     margin-top: 20px;
     padding: 0px 25px;   
 }
+#welcome-title-web{
+    display: none;
+}
+.welcome-col2{
+    display: none;
+}
 #welcome-content{
     font-size: 13px;
 }
@@ -168,6 +174,14 @@ header{
 .end-icons{
     display: flex;
 }
+.header-icons{
+    display: none;
+}
+.header-icon > a > img{
+    width: 60px;
+    padding-left: 30px;
+    padding-top: 20px;
+}
 #map{
     height: 100px;
     width: 100%;
@@ -196,14 +210,28 @@ footer a:link, .inferior-footer {
     background-color: transparent; 
     text-decoration: none;
   }
+  #nav{
+      width: 100vw;
+      padding: 1vh 10vw;
+  }
+  @media (max-width: 532px){
+    #nav{
+        display: none;
+    }
+  }
   @media (min-width: 532px){
     .img-reference{
         width: 70vw;
         justify-self: center;
     }
   }
-  
   @media (min-width: 768px) { 
+    .logo{
+        width: 200px
+    }
+    #side-nav, .menu-icon, .phone-icon{
+        display: none;
+    }
     .carousel-item img{
         height: 40vh;
     }
@@ -214,4 +242,60 @@ footer a:link, .inferior-footer {
     .welcome{
         width: 80vw;
     }
+    .header-icons{
+        display: flex;
+    }
    }
+   @media (min-width: 992px) {
+       .carousel-item img{
+        height: 56vh;
+        }
+        .img-reference-area{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .img-ref-1{
+            margin-right: -5vw;
+        }
+        .img-ref-2{
+            margin-left: -5vw;
+        }
+        .img-reference{
+            width: 40vw;
+            justify-self: center;
+        }
+        .logo{
+            width: 250px;
+        }
+        .end-main-text{
+            display: none;
+        }
+        .welcome-col2{
+            display: grid;
+        }
+        .welcome-col1{
+            margin-right: 3vw;
+        }
+        .welcome-text{
+            display: grid;
+            justify-self: center;
+            grid-template-columns: 1fr 1fr;
+        }
+        #welcome-title{
+            display: none;
+        }
+        #welcome-title-web{
+            display: grid;
+            justify-self: center;
+            padding-top: 2vh;
+        }
+        
+        .top-footer{
+            margin-top: 6vh;
+        }
+    }
+    @media (min-width: 1338px){
+        .img-reference{
+            height: 45vh;
+        }
+    }
