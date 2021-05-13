@@ -11,7 +11,7 @@
     <main>
         <button id="changeBox">Change the box!</button>
         <div class="cards card1 active"></div>
-        <div class="cards card2"></div>
+        <div class="cards card2 noActive"></div>
     </main>
     <script>
       const btn = document.querySelector("#changeBox");
@@ -21,6 +21,8 @@
         btn.classList.toggle('color');
         card1.classList.toggle('active');
         card2.classList.toggle('active');
+        card1.classList.toggle('noActive');
+        card2.classList.toggle('noActive');
       });
     </script>
   </body>
