@@ -9,6 +9,8 @@
 }
 .all, .content{
     display: grid;
+    justify-self: center;
+    width: 100vw;
 }
 .logo{
     width: 160px;
@@ -95,8 +97,10 @@ header{
 }
 .welcome{
     display: grid;
-    padding-top: 2vh;
     justify-self: center;
+    padding-top: 2vh;
+    justify-content: center;
+    width: 80vw;
 }
 .welcome-text{
     margin-top: 20px;
@@ -192,7 +196,7 @@ iframe{
     width: 100%;
 }
 footer{
-    display: flex;
+    display: grid;
     background-color: #5b5356;
     height: 9vh;
     padding-top: 15px;
@@ -214,7 +218,10 @@ footer a:link, .inferior-footer {
       width: 100vw;
       padding: 1vh 10vw;
   }
-  @media (max-width: 532px){
+
+/* ----- Media queries ----- */ 
+
+    @media (max-width: 767px){
     #nav{
         display: none;
     }
@@ -299,3 +306,6 @@ footer a:link, .inferior-footer {
             height: 45vh;
         }
     }
+
+    /* ----- Our bostons ----- */ 
+
