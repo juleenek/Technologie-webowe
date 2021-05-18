@@ -31,37 +31,43 @@ main{
 }
 .active{
     animation: active 0.7s linear 0.5s 1 normal forwards;
+    transform: scale(1.4);
+    z-index: 10;
+    background-color: #6969a5;
+    transition: all 1.4s ease-out;
 }
 .noActive{
     animation: noActive 0.7s linear 0.5s 1 normal forwards;
+    transform: scale(0.9);
+    transition: all 1.4s ease-out;
+    background-color: #9898da;
 }
 
 @keyframes active {
     0% { 
         z-index: 10;
         transform: scale(1.4);
-        background-color: #9393c6;
     }
-    50%{
-        z-index: 0;
-        transform: scale(1)
+    50%{   
+         
+        transform: scale(1);
     }
     100% {
         transform: scale(0.9) ;
+        z-index: 0;
     }
 }
 @keyframes noActive {
     0% { 
         z-index: 0;
-        transform: scale(0.9) 
+        transform: scale(0.9) ;
     }
     50%{
-        z-index: 0;
-        transform: scale(1)
+          
+        transform: scale(1);
     }
     100% {
         z-index: 10;
         transform: scale(1.4);
-        background-color: #9393c6;
     }
 }
