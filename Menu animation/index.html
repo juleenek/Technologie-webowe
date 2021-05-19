@@ -7,11 +7,29 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="menu hide">
+    <div class="menu menu-nonactive">
         rrr
     </div>
-    <div class="container show">
+    <div class="container container-hide">
         <button id="show-menu">Show menu!</button>
     </div>
+    <script>
+        const btn = document.querySelector("#show-menu");
+        const menu = document.querySelector(".menu");
+        const container = document.querySelector(".container");
+        btn.addEventListener("click", () => {
+          menu.classList.toggle('menu-active');
+          menu.classList.toggle('menu-nonactive');
+          container.classList.toggle('container-active');
+          container.classList.toggle('container-hide');
+        });
+        const containerHidden = document.querySelector(".container-active");
+        menu.addEventListener("click", () => {
+            container.classList.toggle('container-hide');
+            menu.classList.toggle('menu-active');
+          menu.classList.toggle('menu-nonactive');
+          container.classList.toggle('container-active');
+        });
+      </script>
 </body>
 </html>

@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    background-color: #000000;
+    background-color: #0a3d4f;
     display: grid;
 }
 .container{
@@ -24,5 +24,27 @@ body{
     position: absolute;
     width: 250px;
     height: 100vh;
+    box-shadow: -21px 6px 73px -22px rgba(0,0,0,0.48) inset;
+-webkit-box-shadow: -21px 6px 73px -22px rgba(0,0,0,0.48) inset;
+-moz-box-shadow: -21px 6px 73px -22px rgba(0,0,0,0.48) inset;
+}
+.menu-active{
+    margin-left: 0px;
+    z-index: 2;
+    transition: ease 0.4s;
+}
+.menu-nonactive{
     margin-left: -250px;
+    z-index: 2;
+    transition: ease 0.4s;
+}
+.container-active{
+    transform: scale(0.9);
+    z-index: -2;
+    background-color: #a1d8e4c4;
+    transition: ease 0.4s;
+}
+.container-hide{
+    transform: scale(1);
+    transition: ease 0.4s;
 }
