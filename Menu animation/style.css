@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #000000;
+    display: grid;
+}
+.container{
+    display: grid;
+    height: 100vh;
+    background-color: #a1d8e4;
+    margin: 0;
+    padding: 0;
+}
+#show-menu{
+    width: 140px;
+    height: 35px;
+    justify-self: center;
+    align-self: center;
+}
+.menu{
+    background-color: #008080;
+    position: absolute;
+    width: 250px;
+    height: 100vh;
+    margin-left: -250px;
+}
