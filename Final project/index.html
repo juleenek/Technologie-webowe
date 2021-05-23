@@ -36,7 +36,16 @@
     <a href='https://pngtree.com/so/fresh-leaves'>fresh leaves png from pngtree.com</a>
   --></head>
   <body>
-    <div class="all">
+    <div class="menu menu-nonactive">
+      <div class="nav-element">Home</div>
+      <div class="nav-element">Our bostons</div>
+      <div class="nav-element">About us</div>
+      <div class="nav-element">Puppies</div>
+      <div class="nav-element">Gallery</div>
+      <div class="nav-element">Contact</div>
+      <div class="nav-element">Instagram</div>
+    </div>
+    <div class="all all-hide">
       <div class="container" style="margin: 0px; padding: 0px">
         <header>
           <img
@@ -74,8 +83,11 @@
             </div>
           </div>
         </header>
+        <div class="web-space-nav">
+          <button id="show-menu">Menu</button>
+        </div>
         <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#">Menu</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -196,7 +208,9 @@
               <div class="welcome-col1">
                 <p>
                   <span id="welcome-content"
-                    >Highly professional environment, but still a home for all our animals. We see them and look after them as members of our extended family.</span
+                    >Highly professional environment, but still a home for all
+                    our animals. We see them and look after them as members of
+                    our extended family.</span
                   >
                 </p>
               </div>
@@ -313,7 +327,9 @@
           onclick="closeNav()"
         />
         <div class="nav-element">Home</div>
-        <div class="nav-element">Our bostons</div>
+        <div class="nav-element">
+          <a href="our-bostons.html">Our bostons</a>
+        </div>
         <div class="nav-element">About us</div>
         <div class="nav-element">Puppies</div>
         <div class="nav-element">Gallery</div>
@@ -321,5 +337,23 @@
         <div class="nav-element">Instagram</div>
       </div>
     </div>
+    <script>
+      const btn = document.querySelector("#show-menu");
+      const menu = document.querySelector(".menu");
+      const container = document.querySelector(".all");
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("menu-active");
+        menu.classList.toggle("menu-nonactive");
+        container.classList.toggle("all-active");
+        container.classList.toggle("all-hide");
+      });
+      const containerHidden = document.querySelector(".all-active");
+      menu.addEventListener("click", () => {
+        container.classList.toggle("all-hide");
+        menu.classList.toggle("menu-active");
+        menu.classList.toggle("menu-nonactive");
+        container.classList.toggle("all-active");
+      });
+    </script>
   </body>
 </html>
