@@ -299,6 +299,9 @@ header {
   width: 100%;
   padding: 0;
 }
+#map-container-google-1{
+  margin-bottom: -40px;
+}
 iframe {
   height: 400px;
   width: 100%;
@@ -309,7 +312,6 @@ footer {
   height: 9vh;
   padding-top: 15px;
   width: 100vw;
-  margin-top: -60px;
   color: #cebac1;
   font-size: 7px;
   justify-content: center;
@@ -591,7 +593,7 @@ footer a:link,
 }
 /* ----- Our bostons ----- */
 
-.boston-male-img {
+.boston-male-img, .boston-female-img {
   display: grid;
   justify-self: center;
   width: 100vw;
@@ -630,4 +632,11 @@ footer a:link,
 }
 .first-li{
     list-style-type: circle;
+}
+@media (min-width: 532px) {
+  .img-male, .img-female{
+    justify-self: center;
+    width: 70vw;
+    object-fit: cover;
+  }
 }
