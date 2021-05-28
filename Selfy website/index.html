@@ -1,14 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
     <title>Selfy</title>
-</head>
-<body>
+  </head>
+  <body>
+    <menu>
+      <img class="exit" onclick="closeNav()" src="Images/exit.png" alt="Exit" />
+      <div class="menu-element"><p>Home</p></div>
+      <div class="menu-element"><p>About</p></div>
+      <div class="menu-element"><p>Styles</p></div>
+      <div class="menu-element"><p>Gallery</p></div>
+      <div class="menu-element"><p>Blog</p></div>
+      <div class="menu-element"><p>Contact</p></div>
+    </menu>
     <div class="header-container">
+      <header>
+        <div class="logo">
+          <img id="logo-header" src="images/logo.png" alt="Selfy" />
+        </div>
+        <div class="menu-hamburger" onclick="openNav()">
+          <span class="menu-hamburger">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </span>
+        </div>
+      </header>
+      <div class="wrapper">
+        <h1>You Idiots!</h1>
 
+        <h3>These are not them! You’ve captured their stunt doubles!<br /></h3>
+        <h5>— Spaceballs</h5>
+        <br /><br /><br />
+        <p>
+          <span class="wrapper-text"
+            >No more boring V-Cards, Selfy is the perfect theme for self
+            promotion. A little piece of the internet all about you, customise
+            and self express with Selfy...</span
+          >
+          <span class="wrapper-readmore">Read&nbsp;More</span>
+        </p>
+      </div>
     </div>
-</body>
+    <div class="underheader-container">
+      <div class="underheader-element">
+        <div class="underheader-title"><h2>
+          About me
+        </h2> <span class="dot"></span></div>
+        <div class="underheader-text">
+          <p>
+            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
+            auctor.Donec id elit non mi porta gravida at eget metus. Donec
+            ullamcorper nulla non metus auctor fringilla. Donec id elit non mi
+            porta gravida at eget metus. <br /><br />
+            Vivamus sagittis lacus vel augue laoreetrum faucibus dolor auctor.
+            Aenean eu leonish quam ugue laoreet rutrum faucibus dolor.
+          </p>
+        </div>
+      </div>
+      <div class="underheader-element">
+        <div class="underheader-title"><h2>
+          What I do
+        </h2> <span class="dot"></span></div>
+        <div class="underheader-text">
+          <p>
+            Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla hucibus idol.<br /><br />
+            Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+          </p>
+        </div>
+      </div>
+      <div class="underheader-element">
+        <div class="underheader-title"><h2>
+          Get in touch 
+        </h2><span class="dot"></span></div>
+        <div class="underheader-text">
+          <p>
+            Donec id elit non mi porta gravida at eget metus non mi porta gravida . Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam.
+          </p>
+        </div>
+        <div class="email">
+          <span class="arrow">&rarr;</span><span><p>Say Hi, Email me</p></span>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="media-icons">
+        <img class="social-media" src="Images/icon-facebook.png" alt="Facebook">
+        <img class="social-media" src="Images/icon-twitter.png" alt="Twitter">
+        <img class="social-media" src="Images/icon-linkedin.png" alt="Linkedin">
+      </div>
+      <div class="logo-copyright">
+        <img class="logo-footer" src="Images/logo-foot.png" alt="Logo">
+        <p>&copy;Copyright Selfy 2021</p>
+      </div>
+    </footer>
+  </body>
 </html>
