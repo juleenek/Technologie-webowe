@@ -4,34 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap"
-      rel="stylesheet"
-    />
+    
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@1,300&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
     <script src="script.js"></script>
     <title>Selfy</title>
   </head>
   <body>
-    <menu>
-      <img class="exit" onclick="closeNav()" src="Images/exit.png" alt="Exit" />
-      <div class="menu-element"><p>Home</p></div>
-      <div class="menu-element"><p>About</p></div>
-      <div class="menu-element"><p>Styles</p></div>
-      <div class="menu-element"><p>Gallery</p></div>
-      <div class="menu-element"><p>Blog</p></div>
-      <div class="menu-element"><p>Contact</p></div>
-    </menu>
+    
+      <div class="slide-menu">
+        <img class="exit" onclick="closeNav()" src="Images/exit.png" alt="Exit" />
+        <div class="slide-menu-element"><p>Home</p></div>
+        <div class="slide-menu-element"><p>About</p></div>
+        <div class="slide-menu-element"><p>Styles</p></div>
+        <div class="slide-menu-element"><p>Gallery</p></div>
+        <div class="slide-menu-element"><p>Blog</p></div>
+        <div class="slide-menu-element"><p>Contact</p></div>
+      </div>
     <div class="header-container">
       <header>
         <div class="logo">
@@ -44,21 +36,32 @@
             <span class="hamburger-line"></span>
           </span>
         </div>
+        <menu>
+          <div class="menu-element menu-home"><a href="index.html"><button style="background-color: #f6c142;
+            color: #ffffff;">Home</button></a></div>
+          <div class="menu-element menu-about"><a href="about.html"><button>About</button></a></div>
+          <div class="menu-element menu-styles"><a href="styles.html"><button>Styles</button></a></div>
+          <div class="menu-element menun-gallery"><a href="gallery.html"><button>Gallery</button></a></div>
+          <div class="menu-element menu-blog"><a href="blog.html"><button>Blog</button></a></div>
+          <div class="menu-element menu-contact"><a href="contact.html"><button>Contact</button></a></div>
+        </menu>
       </header>
       <div class="wrapper">
-        <h1>You Idiots!</h1>
-
-        <h3>These are not them! You’ve captured their stunt doubles!<br /></h3>
-        <h5>— Spaceballs</h5>
-        <br /><br /><br />
-        <p>
-          <span class="wrapper-text"
-            >No more boring V-Cards, Selfy is the perfect theme for self
-            promotion. A little piece of the internet all about you, customise
-            and self express with Selfy...</span
-          >
-          <span class="wrapper-readmore">Read&nbsp;More</span>
-        </p>
+        <div class="wrapper-content">
+          <h1>You Idiots!</h1>
+  
+          <h3>These are not them! You’ve captured their stunt doubles!<br /></h3>
+          <h5>— Spaceballs</h5>
+          <br /><br /><br />
+          <p>
+            <span class="wrapper-text"
+              >No more boring V-Cards, Selfy is the perfect theme for self
+              promotion. A little piece of the internet all about you, customise
+              and self express with Selfy...</span
+            >
+            <span class="wrapper-readmore">Read&nbsp;More</span>
+          </p>
+        </div>
       </div>
     </div>
     <div class="underheader-container">
@@ -98,7 +101,7 @@
           </p>
         </div>
         <div class="email">
-          <span class="arrow">&rarr;</span><span><p>Say Hi, Email me</p></span>
+          <span class="arrow">&rarr;</span> &nbsp; </span><span><p>Say Hi, Email me</p></span>
         </div>
       </div>
     </div>
@@ -109,8 +112,8 @@
         <img class="social-media" src="Images/icon-linkedin.png" alt="Linkedin">
       </div>
       <div class="logo-copyright">
-        <img class="logo-footer" src="Images/logo-foot.png" alt="Logo">
-        <p>&copy;Copyright Selfy 2021</p>
+        
+        <p><img class="logo-footer" src="Images/logo-foot.png" alt="Logo">&copy;&nbsp;Copyright Selfy 2021</p>
       </div>
     </footer>
   </body>

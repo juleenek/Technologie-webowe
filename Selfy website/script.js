@@ -1,6 +1,6 @@
 function openNav() {
-    document.querySelector("menu").style.width = "250px";
+    document.querySelector(".slide-menu").style.width = "250px";
   }
   function closeNav() {
-    document.querySelector("menu").style.width = "0";
+    document.querySelector(".slide-menu").style.width = "0";
   }
