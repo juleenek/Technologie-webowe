@@ -1,3 +1,4 @@
+
 /* === FONTS === */
 
 @font-face {
@@ -9,10 +10,7 @@
        url('font/aleo-italic-webfont.svg#aleoitalic') format('svg');
   font-weight: normal;
   font-style: normal;
-
 }
-
-
 @font-face {
   font-family: 'bulletsregular';
   src: url('font/bullets-webfont.eot');
@@ -22,9 +20,7 @@
        url('font/bullets-webfont.svg#bulletsregular') format('svg');
   font-weight: normal;
   font-style: normal;
-
 }
-
 @font-face {
   font-family: 'robotoblack';
   src: url('font/roboto-black-webfont.eot');
@@ -34,10 +30,7 @@
        url('font/roboto-black-webfont.svg#robotoblack') format('svg');
   font-weight: normal;
   font-style: normal;
-
 }
-
-
 @font-face {
   font-family: 'robotobold';
   src: url('font/roboto-bold-webfont.eot');
@@ -47,10 +40,7 @@
        url('font/roboto-bold-webfont.svg#robotobold') format('svg');
   font-weight: normal;
   font-style: normal;
-
 }
-
-
 @font-face {
   font-family: 'robotobold_condensed';
   src: url('font/roboto-boldcondensed-webfont.eot');
@@ -60,10 +50,7 @@
        url('font/roboto-boldcondensed-webfont.svg#robotobold_condensed') format('svg');
   font-weight: normal;
   font-style: normal;
-
 }
-
-
 @font-face {
   font-family: 'robotoitalic';
   src: url('font/roboto-italic-webfont.eot');
@@ -73,12 +60,7 @@
        url('font/roboto-italic-webfont.svg#robotoitalic') format('svg');
   font-weight: normal;
   font-style: normal;
-
 }
-
-
-
-
 @font-face {
   font-family: 'robotolight_italic';
   src: url('font/roboto-lightitalic-webfont.eot');
@@ -88,12 +70,7 @@
        url('font/roboto-lightitalic-webfont.svg#robotolight_italic') format('svg');
   font-weight: normal;
   font-style: normal;
-
 }
-
-
-
-
 @font-face {
   font-family: 'robotoregular';
   src: url('font/roboto-regular-webfont.eot');
@@ -103,7 +80,6 @@
        url('font/roboto-regular-webfont.svg#robotoregular') format('svg');
   font-weight: normal;
   font-style: normal;
-
 }
 
 /* === START === */
@@ -184,7 +160,6 @@ header {
 }
 .wrapper h3 {
   font-family: 'aleoitalic';
-
   color: #e2e2e2;
   font-size: 26px;
 }
@@ -242,7 +217,7 @@ header {
   padding-left: 20%;
 }
 
-/* === UNDER HEADER === */
+/* === UNDER HEADER - MAIN PAGE === */
 
 .underheader-container {
   justify-self: center;
@@ -254,7 +229,7 @@ header {
 .underheader-element {
   padding-right: 30px;
 }
-.underheader-title {
+.underheader-title, .about-title{
   display: flex;
   font-size: 23px;
   color: #2e3438;
@@ -289,9 +264,9 @@ header {
 
 footer {
   display: grid;
-  width: 100vw;
+  width: 93vw;
   grid-template-rows: repeat(2, 1fr);
-  padding-bottom: 70px;
+  padding: 50px 0 130px 0;
   border-top: 1px solid #dcdcdc;
 }
 .media-icons,
@@ -302,7 +277,6 @@ footer {
 .social-media {
   filter: contrast(10%) brightness(135%);
   width: 30px;
-  padding: 50px 0;
 }
 .social-media:hover {
   filter: contrast(20%) brightness(90%);
@@ -338,9 +312,9 @@ menu {
 }
 .menu-element button {
   white-space: nowrap;
-  width: 90px;
+  width: 98px;
   font-size: 20px;
-  height: 37px;
+  height: 39px;
   font-family: 'robotobold_condensed';
   padding: 6.4px;
   background-color: rgba(0, 0, 0, 0);
@@ -356,7 +330,11 @@ menu {
 }
 
 /* == MEDIA QUERIES == */
-
+@media(max-width: 600px){
+  .header-container{
+    grid-template-rows: 1fr 3.7fr;
+  }
+}
 @media (min-width: 600px) {
   .logo {
     justify-self: start;
@@ -382,11 +360,12 @@ menu {
     padding-bottom: 30px;
   }
 }
-
 @media (min-width: 767px) {
   .header-container {
     height: 100vh;
-    padding-top: 30px;
+  }
+  header{
+    padding-top: 60px;
   }
   .wrapper-content {
     padding-right: 33vw;
@@ -394,7 +373,7 @@ menu {
   .wrapper-content h1 {
     font-size: 96px;
   }
-  .wrapper-content h3 {
+  .wrapper-content h3{
     font-size: 26px;
   }
   .slide-menu,
@@ -409,15 +388,14 @@ menu {
   footer {
     grid-template-rows: 1fr;
     grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 100px;
   }
   .logo-copyright {
     justify-self: start;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    padding-left: 5vw;
   }
   .media-icons {
-    padding-right: 30px;
     grid-column: 2 / 3;
     justify-self: right;
   }
@@ -436,5 +414,72 @@ menu {
   .logo-copyright, .media-icons{
     padding-left: 0;
     padding-right: 0;
+  }
+  .header-container{
+    height: 110vh;
+  }
+}
+
+/* ==== ABOUT ==== */
+
+.img-about img{
+  border: 6px solid #ffffff;
+  width: 90vw;
+}
+.img-about{
+  display: grid;
+  justify-content: center;
+}
+.about-container{
+  display: grid;
+  padding: 55px 0 70px 0;
+  width: 92vw;
+  justify-self: center;
+}
+.about-title{
+  font-size: 30px;
+  padding: 25px 0;
+}
+.about-under-title h3{
+  font-family: 'aleoitalic';
+  font-size: 23px;
+  color: #414c53;
+  font-weight: lighter;
+  line-height: 35px;
+}
+.about-text{
+  display: grid;
+  font-family: 'robotoregular';
+  font-weight: normal;
+  color: #888c8f;
+  line-height: 25px;
+}
+@media (min-width: 767px){
+  .about-under-title{
+    padding-right: 30vw;
+  }
+  .about-text{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about-first{
+    padding-right: 20px;
+  }
+  .about-second{
+    padding-left: 20px;
+  }
+}
+@media (min-width: 1140px){
+  .img-about img, .about-content{
+    width: 1130px;
+    justify-self: center;
+  }
+  .about-under-title{
+    padding-right: 300px;
+  }
+  .about-first{
+    padding-right: 30px;
+  }
+  .about-second{
+    padding-left: 30px;
   }
 }
