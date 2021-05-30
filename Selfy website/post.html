@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+    <title>Selfy</title>
+  </head>
+  <body>
+    <div class="slide-menu">
+      <img class="exit" onclick="closeNav()" src="Images/exit.png" alt="Exit" />
+      <div class="slide-menu-element"><p>Home</p></div>
+      <div class="slide-menu-element"><p>About</p></div>
+      <div class="slide-menu-element"><p>Styles</p></div>
+      <div class="slide-menu-element"><p>Gallery</p></div>
+      <div class="slide-menu-element"><p>Blog</p></div>
+      <div class="slide-menu-element"><p>Contact</p></div>
+    </div>
+    <header>
+      <div class="logo">
+        <img id="logo-header" src="images/logo.png" alt="Selfy" />
+      </div>
+      <div class="menu-hamburger" onclick="openNav()">
+        <span class="menu-hamburger">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </span>
+      </div>
+      <menu>
+        <div class="menu-element menu-home">
+          <a href="index.html"><button>Home</button></a>
+        </div>
+        <div class="menu-element menu-about">
+          <a href="about.html"><button>About</button></a>
+        </div>
+        <div class="menu-element menu-styles">
+          <a href="styles.html"><button>Styles</button></a>
+        </div>
+        <div class="menu-element menun-gallery">
+          <a href="gallery.html"><button>Gallery</button></a>
+        </div>
+        <div class="menu-element menu-blog">
+          <a href="blog.html"
+            ><button style="background-color: #f6c142; color: #ffffff">
+              Blog
+            </button></a
+          >
+        </div>
+        <div class="menu-element menu-contact">
+          <a href="contact.html"><button>Contact</button></a>
+        </div>
+      </menu>
+    </header>
+    <div class="post-container">
+      <div class="post-first-half">
+        <div class="post-title">
+          <h2 class="dot">Post Title for an Interesting Article</h2>
+        </div>
+        <div class="under-post-title"><h6>Posted on 31 May 2021</h6></div>
+        <img class="post-image" src="images/blog/photo-1.jpeg" alt="Image" />
+        <div class="lead">
+          <p>
+            Commodo vivamus sagittis lacus vel augue laore sagittis lacus vel
+            augue laoreet rutrum. Fusce dapibus, tellus ac cursus commodo,
+            tortor mauris condimentum nibh, ut fermentum massa. <br />
+          </p>
+        </div>
+        <div class="post-text">
+          <p>
+            Donec ullamcorper nulla non metus auctor fringilla. Donec id elit
+            non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue
+            laoreet rutrum faucibus dolor auctor. Aenean eu leo quam.
+            Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id
+            elit non mi porta gravida at eget metus. Donec ullamcorper nulla non
+            metus auctor fringilla. Donec id elit non mi porta gravida at eget
+            metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
+            dolor auctor. <br /><br />
+            Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+            Vestibulum id ligula porta felis euismod semper. Maecenas sed diam
+            eget risus varius blandit sit amet non magna. Donec ullamcorper
+            nulla non metus auctor fringilla.
+          </p>
+        </div>
+        <div class="section-heading">
+          <h2>Section Heading</h2>
+        </div>
+        <div class="post-text">
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+            nibh, ut fermentum massa justo sit amet risus. Nullam quis risus
+            eget urna mollis ornare vel eu leo. Vivamus sagittis lacus vel augue
+            laoreet rutrum faucibus dolor auctor. Nullam id dolor id nibh
+            ultricies vehicula ut id elit. Sed posuere consectetur est at
+            lobortis. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+            condimentum nibh.
+          </p>
+        </div>
+        <div class="post-text-columns">
+          <div class="post-photo-section">
+              <img class="little-photo-post" src="images/blog/photo-2.jpeg" alt="">
+              <div class="post-quote">
+                <span class="post-quote-word">Quote:</span> <span class="post-quote-text">"Integer posuere erat a ante dapibus posuere velit aliquet. Cras mattis purus sit amet."</span> <br>
+                <span class="post-quote-author"> 
+                    James Dean
+                </span>
+              </div>
+          </div>
+          <div class="post-text">
+            Morbi leo risus, porta ac consecte turac, vestilum ateros. Vesti
+            bulum id ligula porta felis euismod semper. Maecenas sed diam eget
+            risus varius sit amet non magna. Donec ullamcorper. Sed posuere
+            consectetur est at lobortis. Fusce dapibus, tellus ac cursus
+            commodo, tortor mauris condimentum nibh, ut fermentum massa justo
+            sit amet risus. Vestibulum id ligula porta felis euismod semper. Sed
+            posuere consectetur est at lobortis. <br /><br />
+            Nullam id dolor id nibh ultricies vehicula ut id elit.Sed posuere
+            consectetur est at lobortis. Fusce dapibus, tellus ac cursus
+            commodo, tortor mauris condimentum nibh, ut fermentum massa justo
+            sit amet risus. Vestibulum id ligula porta felis euismod semper. Sed
+            posuere consectetur est at lobortis. Nullam id dolor id nibh
+            ultricies vehicula ut id elit.
+          </div>
+        </div>
+        <div class="section-heading">
+            <h2>Conclusion</h2>
+          </div>
+          <div class="post-text">
+            <p>
+                Vestibulum id ligula porta felis euismod semper. Donec id elit non mi porta gravida at eget metus. Aenean lacinia bibendum nulla sed consectetur. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Maecenas sed diam eget risus varius blandit sit amet non magna. <br><br>
+                <span class="back-blog"
+                ><span class="arrow">&rarr;&nbsp;</span>Back to blog</span
+              >
+            </p>
+          </div>
+      </div>
+      <div class="post-second-half">
+        <div class="latest-posts">
+            <div class="post-title">
+                <h2 class="dot">Latest Post</h2>
+            </div>
+            <div class="latest-posts-list">
+                <ul>
+                    <li>&nbsp;&nbsp;Donec id elilit non mi porta gravida</li>
+                    <li>&nbsp;&nbsp;Liamcorper nulla non metus auctor</li>
+                    <li>&nbsp;&nbsp;Bronem sed odio duisius</li>
+                    <li>&nbsp;&nbsp;Donec id elit non mi porta gravida at eget metus vamus sagittis.</li>
+                    <li>&nbsp;&nbsp;Faucibus dolor auctorauris contum</li>
+                </ul>
+            </div>
+        </div>
+        <div class="under-latest-posts">
+            <p><br> Vestibulum id ligula porta felis euismod semper. Maecenas sed diam eget risus varius blandit sit ametr nulla non metus auctor fringilla.</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="media-icons">
+        <img
+          class="social-media"
+          src="Images/icon-facebook.png"
+          alt="Facebook"
+        />
+        <img class="social-media" src="Images/icon-twitter.png" alt="Twitter" />
+        <img
+          class="social-media"
+          src="Images/icon-linkedin.png"
+          alt="Linkedin"
+        />
+      </div>
+      <div class="logo-copyright">
+        <p>
+          <img
+            class="logo-footer"
+            src="Images/logo-foot.png"
+            alt="Logo"
+          />&copy;&nbsp;Copyright Selfy 2021
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
