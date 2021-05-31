@@ -579,10 +579,9 @@ menu {
   display: grid;
   width: 92vw;
   justify-self: center;
-  padding: 0 0 0 0;
 }
 .post-title{
-  padding-top: 25px;
+  padding-top: 30px;
 }
 .post-image,
 .little-photo-post {
@@ -607,16 +606,16 @@ menu {
   padding-top: 10px;
 }
 .post-text {
-  color: #6c7074;
+  color: #75797d;
   line-height: 25px;
   padding-top: 20px;
-  border-bottom: 1px solid #cad2d7;
   padding-bottom: 30px;
 }
 .section-heading h2{
   font-family: "robotobold";
   font-weight: normal;
-  font-size: 22px;
+  font-size: 25px;
+  color: #2e3438;
   padding-top: 15px;
 }
 .post-quote {
@@ -673,20 +672,66 @@ ul li{
 }
 @media (min-width: 767px) {
   .post-container{
-    grid-template-columns: 2.6fr 1fr;
-    padding-top: 40px;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   .post-image{
-    width: 60vw;
+    width: 58vw;
   }
   .post-second-half{
-    display: grid;
+    display: block;
+    flex-direction: column;
+    padding-left: 32px;
+    padding-right: 10px;
+    height: 35%;
     border-left: 1px solid #cad2d7;
   }
   .latest-posts{
     justify-self: center;
-    padding-left: 30px;
-    padding-bottom: 0;
+    padding-bottom: 55px;
   }
-
+  .post-title{
+    padding-top: 20px;
+  }
+  .under-latest-posts{
+    line-height: 25px;
+    padding-top: 20px;
+  }
+  .post-first-half{
+    padding-right: 45px;
+  }
+  .post-text{
+    padding-bottom: 10px;
+  }
+  .post-text-column{
+    padding-top: 2px;
+  }
+  .post-photo-section {
+    float: right;
+    margin-left: 26px;
+    padding-right: 13px;
+    padding-bottom: 40px;
+    width: 270px;
+  }
+}
+@media (min-width: 1140px) {
+  .post-container {
+    width: 1130px;
+    justify-self: center;
+  }
+  .post-image{
+    width: 729px;
+  }
+  .post-second-half{
+    height: 500px;
+    padding-left: 52px;
+  }
+  .post-photo-section{
+    width: 350px;
+  }
+  .post-first-half{
+    padding-right: 80px;
+  }
 }
