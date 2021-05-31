@@ -1,88 +1,7 @@
 /* === FONTS === */
 
-@font-face {
-  font-family: "aleoitalic";
-  src: url("font/aleo-italic-webfont.eot");
-  src: url("font/aleo-italic-webfont.eot?#iefix") format("embedded-opentype"),
-    url("font/aleo-italic-webfont.woff") format("woff"),
-    url("font/aleo-italic-webfont.ttf") format("truetype"),
-    url("font/aleo-italic-webfont.svg#aleoitalic") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "bulletsregular";
-  src: url("font/bullets-webfont.eot");
-  src: url("font/bullets-webfont.eot?#iefix") format("embedded-opentype"),
-    url("font/bullets-webfont.woff") format("woff"),
-    url("font/bullets-webfont.ttf") format("truetype"),
-    url("font/bullets-webfont.svg#bulletsregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "robotoblack";
-  src: url("font/roboto-black-webfont.eot");
-  src: url("font/roboto-black-webfont.eot?#iefix") format("embedded-opentype"),
-    url("font/roboto-black-webfont.woff") format("woff"),
-    url("font/roboto-black-webfont.ttf") format("truetype"),
-    url("font/roboto-black-webfont.svg#robotoblack") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "robotobold";
-  src: url("font/roboto-bold-webfont.eot");
-  src: url("font/roboto-bold-webfont.eot?#iefix") format("embedded-opentype"),
-    url("font/roboto-bold-webfont.woff") format("woff"),
-    url("font/roboto-bold-webfont.ttf") format("truetype"),
-    url("font/roboto-bold-webfont.svg#robotobold") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "robotobold_condensed";
-  src: url("font/roboto-boldcondensed-webfont.eot");
-  src: url("font/roboto-boldcondensed-webfont.eot?#iefix")
-      format("embedded-opentype"),
-    url("font/roboto-boldcondensed-webfont.woff") format("woff"),
-    url("font/roboto-boldcondensed-webfont.ttf") format("truetype"),
-    url("font/roboto-boldcondensed-webfont.svg#robotobold_condensed")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "robotoitalic";
-  src: url("font/roboto-italic-webfont.eot");
-  src: url("font/roboto-italic-webfont.eot?#iefix") format("embedded-opentype"),
-    url("font/roboto-italic-webfont.woff") format("woff"),
-    url("font/roboto-italic-webfont.ttf") format("truetype"),
-    url("font/roboto-italic-webfont.svg#robotoitalic") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "robotolight_italic";
-  src: url("font/roboto-lightitalic-webfont.eot");
-  src: url("font/roboto-lightitalic-webfont.eot?#iefix")
-      format("embedded-opentype"),
-    url("font/roboto-lightitalic-webfont.woff") format("woff"),
-    url("font/roboto-lightitalic-webfont.ttf") format("truetype"),
-    url("font/roboto-lightitalic-webfont.svg#robotolight_italic") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "robotoregular";
-  src: url("font/roboto-regular-webfont.eot");
-  src: url("font/roboto-regular-webfont.eot?#iefix") format("embedded-opentype"),
-    url("font/roboto-regular-webfont.woff") format("woff"),
-    url("font/roboto-regular-webfont.ttf") format("truetype"),
-    url("font/roboto-regular-webfont.svg#robotoregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 /* === START === */
 
@@ -93,7 +12,7 @@
 }
 body {
   display: grid;
-  font-family: "robotoregular";
+  font-family: 'Roboto';
   background-color: #f3f4f5;
 }
 html,
@@ -156,18 +75,20 @@ header {
 }
 .wrapper h1 {
   color: #ffffff;
-  font-family: "robotoblack";
+  font-family: 'Roboto';
   font-size: 72px;
-  font-weight: normal;
+  font-weight: 700;
   margin-bottom: 15px;
 }
 .wrapper h3 {
-  font-family: "aleoitalic";
+  font-family: 'Aleo';
+  font-style: italic;
   color: #e2e2e2;
   font-size: 26px;
 }
 .wrapper h5 {
-  font-family: "robotobold";
+  font-family: 'Roboto';
+  font-weight: 700;
   color: #ffffff;
   font-size: 22px;
   padding-top: 20px;
@@ -176,13 +97,14 @@ header {
   font-size: 18px;
   color: #ffffff;
 }
-.wrapper-readmore {
+.wrapper-readmore, .contact-seefull {
   color: #3c4a52;
   transition: 0.5s;
-  font-family: "robotobold";
+  font-family: 'Roboto';
+  font-weight: 700;
   font-size: 16px;
 }
-.wrapper-readmore:hover {
+.wrapper-readmore:hover, .contact-seefull:hover {
   color: #f6c142;
   transition: 0.5s;
 }
@@ -233,11 +155,12 @@ header {
   padding-right: 30px;
 }
 .underheader-title,
-.about-title {
+.about-title, .contact-title {
   font-size: 22.9px;
   color: #2e3438;
   padding-bottom: 20px;
-  font-family: "robotobold";
+  font-family: 'Roboto';
+  font-weight: 700;
 }
 .underheader-text {
   color: #666a6e;
@@ -252,7 +175,8 @@ header {
 }
 .email {
   padding-top: 20px;
-  font-family: "robotobold";
+  font-family: 'Roboto';
+  font-weight: 700;
   display: flex;
   transition: 0.5s;
   color: #3c4a52;
@@ -319,7 +243,8 @@ menu {
   width: 98px;
   font-size: 20px;
   height: 39px;
-  font-family: "robotobold_condensed";
+  font-family: 'Roboto';
+  font-weight: 700;
   padding: 6.4px;
   background-color: rgba(0, 0, 0, 0);
   border: none;
@@ -437,7 +362,7 @@ menu {
   display: grid;
   justify-content: center;
 }
-.about-container {
+.about-container{
   display: grid;
   padding: 55px 0 70px 0;
   width: 92vw;
@@ -447,17 +372,16 @@ menu {
   font-size: 30px;
   padding: 25px 0;
 }
-.about-under-title h3 {
-  font-family: "aleoitalic";
+.about-under-title h3, .contact-under-title h3{
+  font-family: 'Aleo';
+  font-style: italic;
+  font-weight: 400;
   font-size: 23px;
   color: #414c53;
-  font-weight: lighter;
   line-height: 35px;
 }
-.about-text {
+.about-text, .contact-text {
   display: grid;
-  font-family: "robotoregular";
-  font-weight: normal;
   color: #888c8f;
   line-height: 25px;
 }
@@ -512,7 +436,8 @@ menu {
 .blog-title h2 {
   font-size: 35px;
   color: #2d3438;
-  font-family: "robotobold";
+  font-family: 'Roboto';
+  font-weight: 700;
   font-weight: normal;
   align-items: flex-end;
   text-decoration: none;
@@ -521,7 +446,8 @@ menu {
 .under-blog-title h6,
 .under-post-title h6 {
   color: #ffc000;
-  font-family: "robotobold";
+  font-family: 'Roboto';
+  font-weight: 700;
   font-weight: normal;
   font-size: 14px;
 }
@@ -540,7 +466,8 @@ menu {
   padding-top: 20px;
   font-size: 24px;
   line-height: 32px;
-  font-family: "aleoitalic";
+  font-family: 'Aleo';
+  font-style: italic;
   color: #3c4a52;
 }
 .blog-text {
@@ -590,18 +517,19 @@ menu {
   border: 6px solid #ffffff;
   transition: 0.4s;
 }
-.post-title h2 {
+.post-title h2, .networks-title h2 {
   font-size: 34px;
   line-height: 30px;
   color: #2d3438;
-  font-family: "robotobold";
-  font-weight: normal;
+  font-family: 'Roboto';
+  font-weight: 700;
   padding-bottom: 3px;
 }
 .lead {
   font-size: 24px;
   line-height: 32px;
-  font-family: "aleoitalic";
+  font-family: 'Aleo';
+  font-style: italic;
   color: #414c53;
   padding-top: 10px;
 }
@@ -612,8 +540,8 @@ menu {
   padding-bottom: 30px;
 }
 .section-heading h2{
-  font-family: "robotobold";
-  font-weight: normal;
+  font-family: 'Roboto';
+  font-weight: 700;
   font-size: 25px;
   color: #2e3438;
   padding-top: 15px;
@@ -623,33 +551,35 @@ menu {
   padding-top: 17px;
 }
 .post-quote-word {
-  font-family: "robotobold";
-  font-weight: normal;
+  font-family: 'Roboto';
+  font-weight: 700;
   font-size: 24px;
   color: #3f4a51;
 }
 .post-quote-text {
   font-size: 24px;
   color: #3f4a51;
-  font-family: "aleoitalic";
+  font-family: 'Aleo';
+  font-style: italic;
 }
 .post-quote-author {
   color: #ffc000;
-  font-family: "robotobold";
-  font-weight: normal;
+  font-family: 'Roboto';
+  font-weight: 700;
   font-size: 14px;
 }
 .back-blog {
-  font-family: "robotobold";
+  font-family: 'Roboto';
+  font-weight: 700;
   color: #3c4a52;
 }
-.latest-posts-list ul {
+.latest-posts-list ul, .networks-list ul {
   list-style: none;
   color: #656a6f;
   padding-top: 22px;
   font-size: 15px;
 }
-.latest-posts-list ul li:before {
+.latest-posts-list ul li:before, .networks-list ul li:before {
   content: "\2192";
   color: #f6c142;
 }
@@ -658,12 +588,11 @@ ul li{
   padding-left: 1.5em;
   padding-bottom: 12px;
 }
-.latest-posts{
+.latest-posts, .networks{
   border-bottom: 1px solid #cad2d7;
   padding-bottom: 50px;
 }
-.under-latest-posts{
-  font-style: normal;
+.under-latest-posts, .under-networks{
   padding-bottom: 70px;
   font-size: 15px;
   color: #656a6f;
@@ -733,5 +662,129 @@ ul li{
   }
   .post-first-half{
     padding-right: 80px;
+  }
+}
+
+/* ==== CONTACT ==== */
+
+.contact-title{
+  font-size: 32px;
+}
+.input-place{
+  display: grid;
+  padding-top: 43px;
+}
+.input-place input, textarea{
+  margin: 0 0 20px 0;
+  padding: 10px 1.9vw;
+  border: 1px solid #dde1e5;
+  font-family: 'Roboto';
+  font-weight: 100;
+  font-style: italic;
+  color: #9e9e9e;
+  font-size: 100%;
+  resize: none;
+}
+#name, #email{
+  height: 22px;
+  width: 62.5vw;
+  border-radius: 3px;
+}
+#message{
+  border-radius: 3px;
+  height: 140px;
+}
+#name:focus, #email:focus, #message:focus{
+  border: 1px solid #eedfb0;
+  outline: none;
+}
+.send-message{
+  border: none;
+  color: #fff;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 18px;
+  background-color: #ffc000;
+  text-align: center;
+  padding: 13px 22px;
+  border-radius: 3px;
+}
+.contact-first-half{
+  border-bottom: 1px solid #cad2d7;
+  padding-bottom: 30px;
+}
+.contact-second-half{
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+.under-networks{
+  font-size: 16px;
+  color: #73777b;
+  padding: 40px 0;
+}
+.contact-container{
+  display: grid;
+  padding: 55px 0 0px 0;
+  width: 92vw;
+  justify-self: center;
+}
+@media (min-width: 767px) {
+  .contact-container{
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    padding-top: 70px;
+    padding-bottom: 50px;
+  }
+  .contact-first-half{
+    border-bottom: none;
+  }
+  .contact-second-half{
+    float: right;
+    display: block;
+    padding: 0 10px 0 32px;
+    height: 60vh;
+    border-left: 1px solid #cad2d7;
+  }
+  .contact-first-half-text{
+    padding-right: 60px;
+  }
+  #name, #email{
+    width: 40.5vw;
+  }
+  #message{
+    width: 57.3vw;
+  }
+  .contact-seefull{
+    display: block;
+    padding-top: 12px;
+    line-height: 23px;
+  }
+  .under-networks{
+    line-height: 25px;
+  }
+}
+@media (min-width: 1140px) {
+  .contact-container {
+    width: 1130px;
+    justify-self: center;
+  }
+  .contact-second-half{
+    height: 420px;
+    padding-left: 50px;
+    padding-right: 3px;
+  }
+  .contact-first-half{
+    padding-right: 30px;
+  }
+  #name, #email{
+    height: 22px;
+    width: 503px;
+  }
+  #message{
+    height: 140px;
+    width: 700px;
+  }
+  .under-networks{
+    padding-right: 0px;
   }
 }
