@@ -346,10 +346,7 @@ menu {
   justify-content: center;
 }
 .about-container{
-  display: grid;
   padding: 65px 0 70px 0;
-  width: 92vw;
-  justify-self: center;
 }
 .about-title {
   padding: 25px 0;
@@ -393,13 +390,7 @@ menu {
 
 /* ==== BLOG ==== */
 
-.blog-container, .gallery-container {
-  display: grid;
-}
 .blog-element, .gallery-element {
-  display: grid;
-  width: 93vw;
-  justify-self: center;
   padding: 60px 0 100px 0;
   border-bottom: 1px solid #cad2d7;
 }
@@ -458,11 +449,6 @@ menu {
 
 /* ==== POST ==== */
 
-.post-container {
-  display: grid;
-  width: 92vw;
-  justify-self: center;
-}
 .post-title{
   padding-top: 30px;
 }
@@ -634,10 +620,7 @@ ul li{
   padding: 40px 0;
 }
 .contact-container{
-  display: grid;
   padding: 55px 0 0px 0;
-  width: 92vw;
-  justify-self: center;
 }
 @media (min-width: 769px) {
   .contact-container{
@@ -787,6 +770,14 @@ ul li{
     width: 741px;
     padding-right: 80px;
   }
+}
+
+/* === PAGE CONTAINERS === */
+
+.page-container{
+  display: grid;
+  width: 92vw;
+  justify-self: center;
 }
 
 /* === FONT STYLES === */
