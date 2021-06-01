@@ -720,7 +720,11 @@ textarea {
   margin: 16px 0;
 }
 .image-space-styles{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   padding-top: 15px;
+  width: 95% !important;
 }
 .table-space table {
   width: 100%;
@@ -788,6 +792,60 @@ textarea {
     width: 120px;
     font-size: 12px;
     padding: 2px 2px;
+  }
+}
+@media (min-width: 769px) {
+
+  .photos-styles-two{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+  .photos-styles-two img{
+    width: 26.7vw !important;
+  }
+  .photos-styles-three{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .photos-styles-three img{
+    width: 16.5vw !important;
+  }
+  .text-element-halves{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 40px;
+  }
+  .text-element-thirds{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 40px;
+  }
+  .text-element-fourths{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+  }
+  .text-element-fourths-half{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-column-gap: 20px;
+  }
+  .text-element-fourths-three{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 20px;
+  }
+  .text-element-two-thirds{
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    grid-column-gap: 20px;
+  }
+  .none-rule{
+    display: none;
+  }
+  .styles-container{
+    padding-top: 35px !important;
   }
 }
 
@@ -884,6 +942,9 @@ textarea {
     padding-top: 50px;
     padding-bottom: 50px;
   }
+  .first-half {
+    padding-right: 45px;
+  }
 }
 @media (min-width: 1140px) {
   .second-half {
@@ -902,7 +963,21 @@ textarea {
   width: 92vw;
   justify-self: center;
 }
+@media (min-width: 1140px) {
+  .page-container {
+    width: 1140px;
+    justify-self: center;
+  }
+}
+@media (min-width: 769px) {
+  .page-container {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 
+}
 /* === FONT STYLES === */
 
 .heading-one {
@@ -1094,6 +1169,24 @@ textarea{
 .fieldset-in-fieldset{
   background-color: #ffffff;
 }
+@media (min-width: 480px){
+ input{
+   width: 57vw;
+ }
+ @media (min-width: 769px){
+  input{
+    width: 36vw;
+  }
+  textarea{
+    width: 92.5%;
+  }
+ }
+ @media (min-width: 1140px) {
+  input{
+    width: 478px;
+  }
+ }
+}
 
 /* ==== MAP ==== */
 
@@ -1108,6 +1201,11 @@ textarea{
     height: 550px;
   }
 }
+@media (min-width: 1140px) {
+  input{
+    width: 726px;
+  }
+ }
 
 /* === LIST ARROW STYLING === */
 
@@ -1138,3 +1236,13 @@ ol li::before {
   content: counter(li) ". ";
   color: #f6c142;
 }
+
+
+/* === SCALE === 
+
+.scale{
+  justify-content: center;
+  z-index: 10;
+  width: 910px;
+}
+
