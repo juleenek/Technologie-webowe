@@ -97,17 +97,6 @@ header {
   font-size: 18px;
   color: #ffffff;
 }
-.wrapper-readmore, .contact-seefull {
-  color: #3c4a52;
-  transition: 0.5s;
-  font-family: 'Roboto';
-  font-weight: 700;
-  font-size: 16px;
-}
-.wrapper-readmore:hover, .contact-seefull:hover {
-  color: #f6c142;
-  transition: 0.5s;
-}
 
 /* === SLIDE MENU === */
 
@@ -154,8 +143,7 @@ header {
 .underheader-element {
   padding-right: 30px;
 }
-.underheader-title,
-.about-title, .contact-title {
+.underheader-title{
   font-size: 22.9px;
   color: #2e3438;
   padding-bottom: 20px;
@@ -181,11 +169,6 @@ header {
   transition: 0.5s;
   color: #3c4a52;
   padding-bottom: 100px;
-}
-.arrow,
-.email:hover {
-  color: #f6c142;
-  transition: 0.5s;
 }
 
 /* ==== FOOTER ===== */
@@ -369,17 +352,9 @@ menu {
   justify-self: center;
 }
 .about-title {
-  font-size: 30px;
   padding: 25px 0;
 }
-.about-under-title h3, .contact-under-title h3{
-  font-family: 'Aleo';
-  font-style: italic;
-  font-weight: 400;
-  font-size: 23px;
-  color: #414c53;
-  line-height: 35px;
-}
+
 .about-text, .contact-text {
   display: grid;
   color: #888c8f;
@@ -431,23 +406,6 @@ menu {
 .blog-content {
   padding-left: 3px;
   padding-right: 3px;
-}
-.blog-title,
-.blog-title h2, .gallery-title h2 {
-  font-size: 35px;
-  color: #2d3438;
-  font-family: 'Roboto';
-  font-weight: 700;
-  align-items: flex-end;
-  text-decoration: none;
-}
-.under-blog-title,
-.under-blog-title h6,
-.under-post-title h6 {
-  color: #ffc000;
-  font-family: 'Roboto';
-  font-weight: 700;
-  font-size: 14px;
 }
 .blog-image {
   margin-top: 40px;
@@ -515,34 +473,12 @@ menu {
   border: 6px solid #ffffff;
   transition: 0.4s;
 }
-.post-title h2, .networks-title h2 {
-  font-size: 34px;
-  line-height: 30px;
-  color: #2d3438;
-  font-family: 'Roboto';
-  font-weight: 700;
-  padding-bottom: 3px;
-}
-.lead {
-  font-size: 24px;
-  line-height: 32px;
-  font-family: 'Aleo';
-  font-style: italic;
-  color: #414c53;
-  padding-top: 10px;
-}
+
 .post-text {
   color: #75797d;
   line-height: 25px;
   padding-top: 20px;
   padding-bottom: 30px;
-}
-.section-heading h2{
-  font-family: 'Roboto';
-  font-weight: 700;
-  font-size: 25px;
-  color: #2e3438;
-  padding-top: 15px;
 }
 .post-quote {
   line-height: 32px;
@@ -590,13 +526,6 @@ ul li{
   border-bottom: 1px solid #cad2d7;
   padding-bottom: 50px;
 }
-.under-latest-posts, .under-networks{
-  padding-bottom: 70px;
-  font-size: 15px;
-  color: #656a6f;
-  line-height: 30px;
-  font-style: italic;
-}
 @media (min-width: 769px) {
   .post-container{
     display: grid;
@@ -615,7 +544,6 @@ ul li{
     padding-top: 20px;
   }
   .under-latest-posts{
-    line-height: 25px;
     padding-top: 20px;
   }
   .post-first-half{
@@ -653,9 +581,6 @@ ul li{
 
 /* ==== CONTACT ==== */
 
-.contact-title{
-  font-size: 32px;
-}
 .input-place{
   display: grid;
   padding-top: 43px;
@@ -734,13 +659,8 @@ ul li{
   #message{
     width: 57.3vw;
   }
-  .contact-seefull{
-    display: block;
-    padding-top: 12px;
-    line-height: 23px;
-  }
-  .under-networks{
-    line-height: 25px;
+  .under-networks p{
+    padding-bottom: 12px;
   }
 }
 @media (min-width: 1140px) {
@@ -763,9 +683,6 @@ ul li{
   #message{
     height: 140px;
     width: 700px;
-  }
-  .under-networks{
-    padding-right: 0px;
   }
 }
 
@@ -852,6 +769,7 @@ ul li{
 }
 
 /* === TWO HALF SUBPAGE === */
+
 @media (min-width: 769px){
   .second-half{
     display: block;
@@ -869,4 +787,70 @@ ul li{
     width: 741px;
     padding-right: 80px;
   }
+}
+
+/* === FONT STYLES === */
+
+.heading-one {
+  font-size: 32px;
+  color: #2e3438;
+  padding-top: 25px;
+  padding-bottom: 33px;
+  font-family: 'Roboto';
+  font-weight: 700;
+}
+.lead h3{
+  font-family: 'Aleo';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 23px;
+  color: #414c53;
+
+  line-height: 35px;
+}
+.heading-two h2 {
+  font-size: 35px;
+  line-height: 30px;
+  color: #2d3438;
+  font-family: 'Roboto';
+  font-weight: 700;
+  padding-bottom: 3px;
+  align-items: flex-end;
+  text-decoration: none;
+}
+.heading-four h4{
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 24px;
+  color: #2e3438;
+  padding-top: 15px;
+}
+.more-link{
+  color: #3c4a52;
+  transition: 0.5s;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 16px;
+}
+.more-link:hover{
+  color: #f6c142;
+  transition: 0.5s;
+}
+.arrow,
+.email:hover {
+  color: #f6c142;
+  transition: 0.5s;
+}
+.heading-six h6{
+  color: #ffc000;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 14px;
+}
+.italic-style{
+  font-size: 15px;
+  color: #656a6f;
+  line-height: 30px;
+  font-style: italic;
+  line-height: 25px;
 }
