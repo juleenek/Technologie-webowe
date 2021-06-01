@@ -255,7 +255,7 @@ menu {
     height: 90vh;
   }
 }
-@media (max-width: 769px) {
+@media (max-width: 768px) {
   menu {
     display: none;
   }
@@ -678,6 +678,9 @@ textarea {
 .italic-style-styles {
   padding-bottom: 16px;
 }
+.horizontal-rules{
+  border-bottom: 13px;
+}
 .horizontal-rule {
   display: block;
   height: 20px;
@@ -696,23 +699,28 @@ textarea {
   padding: 16px 0px;
 }
 .buttons-space button {
-  width: 100%;
   margin: 9px 0px;
 }
 .regular-btn {
-  height: 44px;
   width: 100%;
+  height: 44px;
 }
 .small-btn {
+  width: 100%;
   height: 35.2px;
   font-size: 14px;
 }
 .exsmall-btn {
+  width: 100%;
   height: 28.8px;
   font-size: 12px;
+  margin-bottom: 0;
 }
 .image-space-styles img {
   margin: 16px 0;
+}
+.image-space-styles{
+  padding-top: 15px;
 }
 .table-space table {
   width: 100%;
@@ -737,6 +745,52 @@ textarea {
   border-collapse: collapse;
   background-color: #ffffff;
 }
+.buttons-style{
+  padding: 25px 0 12px 0;
+}
+.styles-container .heading-four h4{
+  margin: 30px 0 3px 0;
+}
+.iframe-title{
+  padding-top: 10px;
+}
+.block-quote{
+  font-family: "Aleo";
+  font-style: italic;
+  font-size: 24px;
+  color: #3c4a52;
+  line-height: 32px;
+}
+.styles-second-half{
+  padding: 30px 0 0 20px;
+}
+@media (min-width: 480px){
+  .buttons-space {
+    display: flex;
+    align-items: center;
+  }
+  .buttons-space button{
+    margin-right: 8px;
+  }
+  .regular-btn {
+    width: 151px;
+    height: 48px;
+    font-size: 18px;
+    padding: 10px 10px;
+  }
+  .small-btn {
+    width: 100px;
+    height: 37px;
+    padding: 5px 5px;
+  }
+  .exsmall-btn {
+    height: 30px;
+    width: 120px;
+    font-size: 12px;
+    padding: 2px 2px;
+  }
+}
+
 /* ==== GALLERY ==== */
 
 .gallery-title {
@@ -824,6 +878,12 @@ textarea {
     height: 35%;
     border-left: 1px solid #cad2d7;
   }
+  .page-halfcontainer {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 @media (min-width: 1140px) {
   .second-half {
@@ -846,7 +906,7 @@ textarea {
 /* === FONT STYLES === */
 
 .heading-one {
-  font-size: 32px;
+  font-size: 33px;
   color: #2e3438;
   padding-top: 25px;
   padding-bottom: 33px;
@@ -857,12 +917,12 @@ textarea {
   font-family: "Aleo";
   font-style: italic;
   font-weight: 400;
-  font-size: 23px;
+  font-size: 21px;
   color: #414c53;
   line-height: 35px;
 }
 .heading-two h2 {
-  font-size: 35px;
+  font-size: 34px;
   line-height: 30px;
   color: #2d3438;
   font-family: "Roboto";
@@ -872,21 +932,20 @@ textarea {
   text-decoration: none;
 }
 .heading-three h3 {
-  font-size: 28px;
+  font-size: 27px;
   line-height: 30px;
   color: #2d3438;
   font-family: "Roboto";
   font-weight: 700;
-  padding-bottom: 3px;
+  padding-bottom: 2px;
   align-items: flex-end;
   text-decoration: none;
 }
 .heading-four h4 {
   font-family: "Roboto";
   font-weight: 700;
-  font-size: 24px;
+  font-size: 23px;
   color: #2e3438;
-  padding-top: 15px;
 }
 .more-link {
   color: #3c4a52;
@@ -908,13 +967,13 @@ textarea {
   color: #ffc000;
   font-family: "Roboto";
   font-weight: 700;
-  font-size: 24px;
+  font-size: 23px;
 }
 .heading-six h6 {
   color: #ffc000;
   font-family: "Roboto";
   font-weight: 700;
-  font-size: 14px;
+  font-size: 13px;
 }
 .italic-style {
   font-size: 15px;
@@ -925,6 +984,7 @@ textarea {
 }
 .default-text {
   line-height: 25px;
+  padding: 12px 0;
 }
 .link {
   transition: 0.4s;
@@ -957,6 +1017,7 @@ button:hover {
   transition: 0.5s;
 }
 
+
 /* == IMAGES STYLING == */
 
 .images-basic img {
@@ -971,6 +1032,7 @@ button:hover {
 .main-fieldset fieldset {
   display: grid;
   padding: 16px;
+  margin: 10px 0;
 }
 legend {
   color: #656a6f;
@@ -1036,8 +1098,15 @@ textarea{
 /* ==== MAP ==== */
 
 .map{
-  width: 100%;
+  width: 98%;
   height: 320px;
+  padding-top: 15px;
+  border: 6px solid #ffffff;
+}
+@media (min-width: 480px){
+  .map{
+    height: 550px;
+  }
 }
 
 /* === LIST ARROW STYLING === */
@@ -1046,6 +1115,7 @@ textarea{
   list-style: none;
   color: #656a6f;
   font-size: 15px;
+  padding-bottom: 10px;
 }
 .list-arrows ul li:before{
   content: "\2192";
@@ -1055,4 +1125,16 @@ textarea{
   text-indent: -1.5em;
   padding-left: 1.5em;
   padding-bottom: 12px;
+}
+
+/* === ORDERED LIST STYLING === */
+
+ol li{
+  list-style: none;
+  counter-increment: li;
+  padding-bottom: 10px;
+}
+ol li::before {
+  content: counter(li) ". ";
+  color: #f6c142;
 }
