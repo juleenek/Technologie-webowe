@@ -154,8 +154,8 @@ header {
   color: #666a6e;
   line-height: 24px;
 }
-.dot:after {
-  content: ".";
+.dot{
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 56px;
   position: relative;
   padding-left: 2px;
