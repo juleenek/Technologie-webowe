@@ -389,7 +389,7 @@ menu {
   border: 6px solid #ffffff;
   transition: 0.4s;
 }
-.blog-image:hover {
+.blog-image:hover, .gallery-images-side img:hover {
   transition: 0.4s;
   opacity: 0.6;
 }
@@ -878,6 +878,9 @@ textarea {
     grid-template-rows: repeat(3, 20vw);
     grid-column-gap: 25px;
     align-self: start;
+  }
+  .gallery-images-side img{
+    transition: 0.5s;
   }
   .photo-span-gallery {
     grid-row-start: 1;
