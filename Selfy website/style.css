@@ -1242,3 +1242,18 @@ ol li::before {
 
 
 /* === SCALE === */
+
+.lightbox{
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-self: center;
+  align-items: center;
+  display: none;
+}
+.lightbox-visible{
+  display: flex;
+}
