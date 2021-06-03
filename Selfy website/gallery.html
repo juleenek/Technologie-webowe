@@ -10,21 +10,35 @@
       href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@1,300&display=swap"
       rel="stylesheet"
     />
-    <script src="script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
     <title>Selfy</title>
   </head>
   <body>
     <div class="slide-menu">
-      <div class="slide-menu-element"><a href="index.html"><p>Home</p></a></div>
-      <div class="slide-menu-element"><a href="about.html"><p>About</p></a></div>
-      <div class="slide-menu-element"><a href="styles.html"><p>Styles</p></a></div>
-      <div class="slide-menu-element"><a href="gallery.html"><p>Gallery</p></a></div>
-      <div class="slide-menu-element"><a href="blog.html"><p>Blog</p></a></div>
-      <div class="slide-menu-element"><a href="contact.html"><p>Contact</p></a></div>
+      <div class="slide-menu-element">
+        <a href="index.html"><p>Home</p></a>
+      </div>
+      <div class="slide-menu-element">
+        <a href="about.html"><p>About</p></a>
+      </div>
+      <div class="slide-menu-element">
+        <a href="styles.html"><p>Styles</p></a>
+      </div>
+      <div class="slide-menu-element">
+        <a href="gallery.html"><p>Gallery</p></a>
+      </div>
+      <div class="slide-menu-element">
+        <a href="blog.html"><p>Blog</p></a>
+      </div>
+      <div class="slide-menu-element">
+        <a href="contact.html"><p>Contact</p></a>
+      </div>
     </div>
     <header>
       <div class="logo">
-        <a href="index.html"><img id="logo-header" src="images/logo.png" alt="Selfy" /></a>
+        <a href="index.html"
+          ><img id="logo-header" src="images/logo.png" alt="Selfy"
+        /></a>
       </div>
       <div class="menu-hamburger" onclick="openNav()">
         <span class="menu-hamburger">
@@ -68,26 +82,104 @@
             Praesent commodo vivamus sagittis lacus vel augue ucibus dolom.
           </div>
           <div class="gallery-text">
-            Donec id elilit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Donec idi portaida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare semonec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla.
+            Donec id elilit non mi porta gravida at eget metus. Donec
+            ullamcorper nulla non metus auctor fringilla. Donec idi portaida at
+            eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
+            dolor auctor. Aenean eu leo quam. Pellentesque ornare semonec id
+            elit non mi porta gravida at eget metus. Donec ullamcorper nulla non
+            metus auctor fringilla.
           </div>
           <a href="styles.html">
             <span class="email more-link"
-            ><span class="arrow">&rarr;&nbsp;</span>See Full Theme Styles</span
-          >
+              ><span class="arrow">&rarr;&nbsp;</span>See Full Theme
+              Styles</span
+            >
           </a>
         </div>
         <div class="gallery-images-side">
-          <img id="gallery-img1" class="gallery-images-side-little" src="images/blog/photo-7.jpeg" alt="Photo">
-          <img id="gallery-img2" class="gallery-images-side-little" src="images/blog/photo-1.jpeg" alt="Photo">
-          <img id="gallery-img3" class="gallery-images-side-little" src="images/blog/photo-6.jpeg" alt="Photo">
-          <img class="gallery-images-side-little" src="images/blog/photo-5.jpeg" alt="Photo">
-          <img id="gallery-img4" class="gallery-images-side-little" src="images/blog/photo-4.jpeg" alt="Photo">
-          <img id="gallery-img5" class="gallery-images-side-little" src="images/blog/photo-2.jpeg" alt="Photo">
+          <img
+            id="img1"
+            class="gallery-images-side-little"
+            src="images/blog/photo-7.jpeg"
+            alt="Photo"
+          />
+          <img
+            id="img2"
+            class="gallery-images-side-little"
+            src="images/blog/photo-1.jpeg"
+            alt="Photo"
+          />
+          <img
+            id="img3"
+            class="gallery-images-side-little"
+            src="images/blog/photo-6.jpeg"
+            alt="Photo"
+          />
+          <img
+            id="img4"
+            class="gallery-images-side-little"
+            src="images/blog/photo-5.jpeg"
+            alt="Photo"
+          />
+          <img
+            id="img5"
+            class="gallery-images-side-little"
+            src="images/blog/photo-4.jpeg"
+            alt="Photo"
+          />
+          <img
+            id="img6"
+            class="gallery-images-side-little"
+            src="images/blog/photo-2.jpeg"
+            alt="Photo"
+          />
         </div>
         <div class="lightbox">
-          <img id="lightbox-image" alt="Your image.">
+          <div class="parent">
+            <img
+              id="lightbox-image"
+              alt="Your 
+              image."
+            />
+            <img class="close" src="icons/exit.png" />
+          </div>
+          
         </div>
-        
+        <script type="text/javascript">
+          const img1 = document.querySelector("#img1");
+          const img2 = document.querySelector("#img2");
+          const img3 = document.querySelector("#img3");
+          const img4 = document.querySelector("#img4");
+          const img5 = document.querySelector("#img5");
+
+          img1.addEventListener("click", () =>
+            openLightbox("images/blog/photo-7.jpeg")
+          );
+          img2.addEventListener("click", () =>
+            openLightbox("images/blog/photo-1.jpeg")
+          );
+          img3.addEventListener("click", () =>
+            openLightbox("images/blog/photo-6.jpeg")
+          );
+          img4.addEventListener("click", () =>
+            openLightbox("images/blog/photo-5.jpeg")
+          );
+          img5.addEventListener("click", () =>
+            openLightbox("images/blog/photo-4.jpeg")
+          );
+          img6.addEventListener("click", () =>
+            openLightbox("images/blog/photo-2.jpeg")
+          );
+
+          var imagesGallery = [img1, img2, img3, img4, img5];
+
+          function openLightbox(imgSource) {
+            const lightbox = document.querySelector(".lightbox");
+            const lightboxImage = document.querySelector("#lightbox-image");
+            lightbox.classList.add("lightbox-visible");
+            lightboxImage.src = imgSource;
+          }
+        </script>
       </div>
       <div class="gallery-element images-basic">
         <div class="gallery-text-side">
@@ -98,30 +190,53 @@
             Praesent commodo vivamus sagittis lacus vel augue ucibus dolom.
           </div>
           <div class="gallery-text">
-            Donec id elilit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Donec idi portaida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare semonec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla.
+            Donec id elilit non mi porta gravida at eget metus. Donec
+            ullamcorper nulla non metus auctor fringilla. Donec idi portaida at
+            eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
+            dolor auctor. Aenean eu leo quam. Pellentesque ornare semonec id
+            elit non mi porta gravida at eget metus. Donec ullamcorper nulla non
+            metus auctor fringilla.
           </div>
         </div>
         <div class="gallery-images-side">
-          <img class="photo-span-gallery" src="images/blog/photo-3.jpeg" alt="Photo">
-          <img class="gallery-images-side-little" src="images/blog/photo-7.jpeg" alt="Photo">
-          <img class="gallery-images-side-little" src="images/blog/photo-6.jpeg" alt="Photo">
+          <img
+            class="photo-span-gallery"
+            src="images/blog/photo-3.jpeg"
+            alt="Photo"
+          />
+          <img
+            class="gallery-images-side-little"
+            src="images/blog/photo-7.jpeg"
+            alt="Photo"
+          />
+          <img
+            class="gallery-images-side-little"
+            src="images/blog/photo-6.jpeg"
+            alt="Photo"
+          />
         </div>
       </div>
-      <div class="gallery-element images-basic" style="border: none;">
+      <div class="gallery-element images-basic" style="border: none">
         <div class="gallery-text-side">
           <div class="gallery-title heading-two">
             <h2>Gallery Style Three<span class="dot">.</span></h2>
           </div>
           <div class="before-gallery-text">
-            Commodo vivamus sagittis lacus vel augue laore sagittis lacus vel augue laoreet rutrum.
+            Commodo vivamus sagittis lacus vel augue laore sagittis lacus vel
+            augue laoreet rutrum.
           </div>
           <div class="gallery-text">
-            Blonec id elilit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel auguus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.  
+            Blonec id elilit non mi porta gravida at eget metus. Donec
+            ullamcorper nulla non metus auctor fringilla. Donec id elit non mi
+            porta gravida at eget metus. Vivamus sagittis lacus vel auguus
+            sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+            Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
+            vestibulum.
           </div>
         </div>
         <div class="gallery-images-side gallery-images-side-two">
-          <img src="images/blog/photo-1.jpeg" alt="Photo">
-          <img src="images/blog/photo-2.jpeg" alt="Photo">
+          <img src="images/blog/photo-1.jpeg" alt="Photo" />
+          <img src="images/blog/photo-2.jpeg" alt="Photo" />
         </div>
       </div>
     </div>
