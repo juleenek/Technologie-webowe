@@ -6,10 +6,3 @@ function openNav() {
   function closeNav() {
     document.querySelector(".slide-menu").style.width = "0";
   }
-
-  // SCALE PHOTO
-
-
-  // VIDEO SRIPT
-
- 

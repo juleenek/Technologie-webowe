@@ -141,7 +141,13 @@
               alt="Your 
               image."
             />
-            <img class="close" src="icons/exit.png" />
+            <img onclick="closeLightBox()" class="close" src="icons/exit.png" />
+            <div onclick="closeLightBox()" class="left-side"></div>
+              <img class="left" src="icons/left.png" />
+            
+            <div class="right-side">
+              <img onclick="closeLightBox()" class="right" src="icons/right.png" />
+            </div>
           </div>
           
         </div>
@@ -178,6 +184,10 @@
             const lightboxImage = document.querySelector("#lightbox-image");
             lightbox.classList.add("lightbox-visible");
             lightboxImage.src = imgSource;
+          }
+          function closeLightBox(){
+            const lightbox = document.querySelector(".lightbox");
+            lightbox.classList.remove("lightbox-visible");
           }
         </script>
       </div>

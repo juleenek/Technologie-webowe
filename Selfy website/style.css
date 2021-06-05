@@ -1253,6 +1253,7 @@ ol li::before {
   justify-content: center;
   align-items: center;
   display: none;
+  
 }
 .lightbox-visible{
   display: flex !important;
@@ -1262,13 +1263,47 @@ ol li::before {
   display: block;
   width: 70vw !important;
 }
+.parent{
+  display: grid;
+}
 .close {
   position: absolute;
-  top: -15px !important;
-  right: -28px !important;
+  top: -15px;
+  right: -28px;
   width: 40px !important;
   height: 40px !important;
   border: none !important;
   cursor: pointer;
   z-index: 8040;
+}
+.left {
+  display: none;
+  position: absolute;
+  margin-top: 15px;
+  align-self: center;
+  left: 20px;
+  width: 40px !important;
+  height: 40px !important;
+  border: none !important;
+  cursor: pointer;
+
+}
+.right {
+  display: none;
+  position: absolute;
+  align-self: center;
+  right: 2px;
+  width: 40px !important;
+  height: 40px !important;
+  border: none !important;
+  cursor: pointer;
+
+}
+.left-side{
+  position: absolute;
+  height: 42vw;
+  width: 30vw;
+}
+.left-side:hover + .left{
+  display: grid;
 }
