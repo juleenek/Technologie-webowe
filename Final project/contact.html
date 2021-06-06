@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inferior Silesia Canis</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> 
+    <a href='https://pngtree.com/so/fresh-leaves'>fresh leaves png from pngtree.com</a>
+  --></head>
+  <body>
+    <div class="menu menu-nonactive">
+      <a href="index.html"><div class="nav-element">Home</div></a>
+      <a href="our-bostons.html"><div class="nav-element">Our bostons</div></a>
+      <div class="nav-element">Gallery</div>
+      <div class="nav-element">Contact</div>
+      <a href="https://www.instagram.com/bostonterrier_cutesy/"
+        ><div class="nav-element">Instagram</div></a
+      >
+      <div class="nav-element">Facebook</div>
+    </div>
+    <div class="all all-hide">
+      <div class="container" style="margin: 0px; padding: 0px">
+        <header>
+          <img
+            class="logo"
+            src="logos/logo.png"
+            alt="Logo Inferior Silesia Canis"
+          />
+          <img class="phone-icon" src="icons/phone.png" alt="Contact" />
+          <div class="menu-icon" onclick="openNav()">
+            <div class="menu-icon-element icon-change"></div>
+            <div class="menu-icon-element"></div>
+            <div class="menu-icon-element"></div>
+            <div class="menu-icon-element icon-change"></div>
+          </div>
+          <div class="header-icons">
+            <div class="header-icon fb-icon">
+              <a href="https://www.facebook.com/alex.leenek"
+                ><img src="icons/facebook.png" alt="Facebook"
+              /></a>
+            </div>
+            <div class="header-icon insta-icon">
+              <a href="https://www.instagram.com/bostonterrier_cutesy/"
+                ><img src="icons/instagram.png" alt="Instagram"
+              /></a>
+            </div>
+            <div class="header-icon mail-icon">
+              <a href="mailto: linek.aleksandra@gmail.com"
+                ><img src="icons/mail.png" alt="Mail us"
+              /></a>
+            </div>
+            <div class="header-icon tel-icon">
+              <a href="tel: 500-083-369"
+                ><img src="icons/phone.png" alt="Phone us"
+              /></a>
+            </div>
+          </div>
+        </header>
+        <div class="web-space-nav">
+          <button id="show-menu">Menu</button>
+        </div>
+        <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">Menu</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="our-bostons.html">Our bostons</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Instagram</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Facebook</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="content">
+         
+            <div class="contact-content">
+                    <h2>Contact us!</h2>
+                <div class="input-place">
+                    <input
+                    class="input-text"
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="What's your name"
+                      autofocus
+                    />
+                    <input
+                    class="input-text"
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Your email"
+                    />
+                    <textarea
+                    class="input-text"
+                      id="message"
+                      name="message"
+                      rows="5"
+                      cols="20"
+                      placeholder="Whats this about?"
+                    ></textarea>
+                    <button class="send-mess">Send message</button>
+                  </div>
+                  
+            </div>
+
+          <footer>
+            <p>
+              ©2021 by
+              <span class="inferior-footer">Inferior Silesia Canis</span> <br />
+              Icons made by
+              <a
+                href="https://www.flaticon.com/authors/dave-gandy"
+                title="Dave Gandy"
+                >Dave Gandy</a
+              >
+              from
+              <a href="https://www.flaticon.com/" title="Flaticon"
+                >www.flaticon.com</a
+              >
+            </p>
+          </footer>
+        </div>
+      </div>
+      <div id="side-nav">
+        <img
+          class="logo-nav"
+          src="logos/logo2.png"
+          alt="Logo Inferior Silesia Canis"
+        />
+        <img
+          class="exit-icon"
+          src="icons/exit.png"
+          alt="Exit icon"
+          onclick="closeNav()"
+        />
+        <a href="index.html"><div class="nav-element">Home</div></a>
+        <a href="our-bostons.html"
+          ><div class="nav-element">Our bostons</div></a
+        >
+        <div class="nav-element">About us</div>
+        <div class="nav-element">Gallery</div>
+        <div class="nav-element">Contact</div>
+        <a href="https://www.instagram.com/bostonterrier_cutesy/"
+          ><div class="nav-element">Instagram</div></a
+        >
+      </div>
+    </div>
+    <script>
+      const btn = document.querySelector("#show-menu");
+      const menu = document.querySelector(".menu");
+      const container = document.querySelector(".all");
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("menu-active");
+        menu.classList.toggle("menu-nonactive");
+        container.classList.toggle("all-active");
+        container.classList.toggle("all-hide");
+      });
+      const containerHidden = document.querySelector(".all-active");
+      menu.addEventListener("click", () => {
+        container.classList.toggle("all-hide");
+        menu.classList.toggle("menu-active");
+        menu.classList.toggle("menu-nonactive");
+        container.classList.toggle("all-active");
+      });
+    </script>
+  </body>
+</html>

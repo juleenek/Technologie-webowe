@@ -192,6 +192,7 @@ header {
   display: flex;
 }
 .header-icons {
+  filter: contrast(60%);
   display: none;
 }
 .header-icon > a > img {
@@ -385,6 +386,9 @@ footer a:link,
     display: none;
   }
   .web-space-nav {
+    display: none;
+  }
+  .boston-name{
     display: none;
   }
 }
@@ -852,4 +856,84 @@ a:visited {
       transform: translateX(0);
     }
   }
+}
+
+/* ---- contact ---- */
+
+.contact-content{
+  display: grid;
+  background-image: url(puppy_bg.jpg);
+  height: 100vh;
+  padding-left: 5px;
+  width: 100vw;
+  background-position: center center;
+  background-size: cover;
+  grid-template-rows: 0.5fr 10fr;
+}
+.input-place{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input-place input,
+textarea {
+  border: 1px solid #a2a2a2;
+  font-size: 100%;
+}
+.input-text{
+  margin-top: 15px;
+  background-color: rgba(179, 179, 179, 0.023);
+}
+#name,
+#email {
+  height: 35px;
+  width: 70vw;
+  border-radius: 3px;
+}
+#message {
+  border-radius: 3px;
+  width: 70vw;
+  height: 200px;
+  resize: none;
+}
+::placeholder{
+  color: #989898;
+  padding: 8px 0 0 8px;
+}
+.contact-content h2{
+  padding-top: 30px;
+  font-size: 35px;
+  justify-self: center;
+}
+input:focus, textarea:focus{
+  border: 2px solid #fca8a85f;
+  outline: none;
+}
+.send-mess{
+  width: 180px;
+  height: 40px;
+  margin-top: 30px;
+  transition: clip-path 1s;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+}
+.send-mess:hover{
+  animation: 0.4s arrowButton;
+}
+@keyframes arrowButton {
+  0% { clip-path: polygon(0) }
+  100% { 
+    clip-path: 
+    polygon(
+      0% 0,                 /* top left */
+      0 0%,                 /* top left */
+      calc(100% - 20px) 0%,    /* top right */
+      100% 20px,               /* top right */
+      100% calc(100% - 20px),  /* bottom right */
+      calc(100% - 20px) 100%,  /* bottom right */
+      0 100%,               /* bottom left */
+      0 calc(100% - 20px)      /* bottom left */
+    );
+   }
 }
