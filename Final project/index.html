@@ -201,13 +201,14 @@
           </div>
           <div class="welcome">
             <h3 id="welcome-title-web">Inferior Silesia Canis Welcomes You!</h3>
+          
             <div class="line"></div>
             <div class="about-us">
-              <div class="about-img">
-                <img  src="aboutus_main.jpg" alt="Me and bostons" />
-              </div>
-              <div class="about-text">
-                <h2>About us</h2>
+              
+                <img class="about-img"  src="aboutus_main.jpg" alt="Me and bostons" />
+           
+        
+                <h2 id="about-title">About us</h2>
                 <p>
                   Highly professional environment, but still a home for all our
                   animals. We see them and look after them as members of our
@@ -232,7 +233,9 @@
                   dozen or so generations, it may be possible to minimalize
                   certain diseases just by proper selection. About bostons
                   diseases you can read at Boston Terrier Club of America
-                  website: here <br /><br />
+                  website: here <br /><br /></p>
+                  <img class="about-img2 " src="run.jpg" alt="Bostons">
+                  <p>
                   As essential part of our philosophy, we don’t focus only on
                   appearance and health, but we invest a lot is socialisation as
                   well. Rather than training, we like to refer to it as
@@ -252,7 +255,9 @@
                   we stand behind our exceptional results.Every puppy from our
                   kennel receives birth certificate, personalized document
                   folder and heathbook, passport booklet, chip, pedigree copies
-                  and health tests copies of parents and layette. <br /><br />
+                  and health tests copies of parents and layette. <br /><br /></p>
+                  <img class="about-img about-img3" src="leo_puppy.jpg" alt="Bostons">
+                  <p>
                   By choosing the puppy from ISC you join our family. What does
                   it mean? Just that before buying a dog we will invite you for
                   a visit and that after we will stay in touch for a long time
@@ -279,12 +284,13 @@
                   about yourselves and let us know when can we welcome you!
                 </p>
               </div>
-              <img class="down" src="icons/down.png" alt="More" />
-              <img class="top" src="icons/down.png" alt="More" />
-              <script>
+            </div>
+                <img class="down" src="icons/down.png" alt="More" />
+                <img class="top" src="icons/down.png" alt="More" />
+                <script>
                 const button = document.querySelector(".down");
                 const buttonTop = document.querySelector(".top");
-                const text = document.querySelector(".about-text");
+                const text = document.querySelector(".about-us");
 
                 button.addEventListener("click", () => {
                   text.classList.toggle("abouttext-active");
@@ -296,18 +302,16 @@
                   button.classList.toggle("down-none");
                   buttonTop.classList.toggle("top-active");
                 });
-              </script>
-              <div class="line"></div>
-            </div>
-          </div>
-
-          <!-- MOBILE -->
+                </script>
+                <div class="line"></div>
+              
+      
           <div class="end-main-text">
             <div class="loki-dog">
               <img src="loki.png" alt="Photo of Loki" />
             </div>
             <div class="near-loki-dog">
-              <span>Contact us!</span>
+              <span id="contact-us-end">Contact us!</span>
               <div class="end-icons">
                 <div class="end-icon">
                   <a href="https://www.facebook.com/alex.leenek"
