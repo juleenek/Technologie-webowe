@@ -548,16 +548,16 @@
           alt="Exit icon"
           onclick="closeNav()"
         />
-        <a href="index.html"><div class="nav-element">Home</div></a>
+        <a href="index.html"><div class="nav-element side-nav-el">Home</div></a>
         <a href="our-bostons.html"
-          ><div class="nav-element">Our bostons</div></a
+          ><div class="nav-element side-nav-el">Our bostons</div></a
         >
-        <a href="gallery.html"><div class="nav-element">Gallery</div></a>
-        <a href="contact.html"><div class="nav-element">Contact</div></a>
+        <a href="gallery.html"><div class="nav-element side-nav-el">Gallery</div></a>
+        <a href="contact.html"><div class="nav-element side-nav-el">Contact</div></a>
         <a href="https://www.instagram.com/bostonterrier_cutesy/"
-          ><div class="nav-element">Instagram</div></a
+          ><div class="nav-element side-nav-el">Instagram</div></a
         >
-        <a href="https://www.facebook.com/inferiorsilesiacanis/"><div class="nav-element">Facebook</div></a>
+        <a href="https://www.facebook.com/inferiorsilesiacanis/"><div class="nav-element side-nav-el">Facebook</div></a>
       </div>
     </div>
     <script>
@@ -573,10 +573,10 @@
       });
       const containerHidden = document.querySelector(".all-active");
       hideMe.addEventListener("click", () => {
-        container.classList.toggle("all-hide");
-        menu.classList.toggle("menu-active");
-        menu.classList.toggle("menu-nonactive");
-        container.classList.toggle("all-active");
+        container.classList.add("all-hide");
+        menu.classList.remove("menu-active");
+        menu.classList.add("menu-nonactive");
+        container.classList.remove("all-active");
       });
       /*const boston = document.querySelector('.boston');
       const maleImg = document.querySelector('.boston-male-img');

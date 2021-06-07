@@ -221,10 +221,10 @@
       </div>
     </div>
     <script>
-      const btn = document.querySelector("#show-menu");
+        const btn = document.querySelector("#show-menu");
       const menu = document.querySelector(".menu");
       const container = document.querySelector(".all");
-      const hideMe = document.querySelector(".contact-container");
+      const hideMe = document.querySelector(".content");
       btn.addEventListener("click", () => {
         menu.classList.toggle("menu-active");
         menu.classList.toggle("menu-nonactive");
@@ -233,10 +233,10 @@
       });
       const containerHidden = document.querySelector(".all-active");
       hideMe.addEventListener("click", () => {
-        container.classList.toggle("all-hide");
-        menu.classList.toggle("menu-active");
-        menu.classList.toggle("menu-nonactive");
-        container.classList.toggle("all-active");
+        container.classList.add("all-hide");
+        menu.classList.remove("menu-active");
+        menu.classList.add("menu-nonactive");
+        container.classList.remove("all-active");
       });
     </script>
   </body>
