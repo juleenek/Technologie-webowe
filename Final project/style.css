@@ -26,6 +26,7 @@ body {
   justify-self: center;
   width: 100vw;
   background-color: #ffffff;
+
 }
 .logo {
   width: 160px;
@@ -1017,7 +1018,7 @@ textarea:focus {
     width: 535px;
   }
   .contact-background {
-    min-height: 635px;
+    min-height: 94vh;
   }
   .list-arrows {
     display: grid;

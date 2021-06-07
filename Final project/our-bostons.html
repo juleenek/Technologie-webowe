@@ -37,22 +37,25 @@
   --></head>
   <body>
     <div class="menu menu-nonactive">
-      <div class="nav-element">Home</div>
-      <div class="nav-element">Our bostons</div>
-      <div class="nav-element">About us</div>
-      <div class="nav-element">Puppies</div>
-      <div class="nav-element">Gallery</div>
-      <div class="nav-element">Contact</div>
-      <div class="nav-element">Instagram</div>
+      <a href="index.html"><div class="nav-element">Home</div></a>
+      <a href="our-bostons.html"><div class="nav-element">Our bostons</div></a>
+      <a href="gallery.html"><div class="nav-element">Gallery</div></a>
+      <a href="contact.html"><div class="nav-element">Contact</div></a>
+      <a href="https://www.instagram.com/bostonterrier_cutesy/"
+        ><div class="nav-element">Instagram</div></a
+      >
+      <a href="https://www.facebook.com/inferiorsilesiacanis/"><div class="nav-element">Facebook</div></a>
     </div>
     <div class="all all-hide">
       <div class="container" style="margin: 0px; padding: 0px">
         <header>
-          <img
-            class="logo"
-            src="logos/logo.png"
-            alt="Logo Inferior Silesia Canis"
-          />
+          <a href="index.html">
+            <img
+              class="logo"
+              src="logos/logo.png"
+              alt="Logo Inferior Silesia Canis"
+            />
+          </a>
           <img class="phone-icon" src="icons/phone.png" alt="Contact" />
           <div class="menu-icon" onclick="openNav()">
             <div class="menu-icon-element icon-change"></div>
@@ -108,19 +111,16 @@
                 <a class="nav-link" href="our-bostons.html">Our bostons</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About us</a>
+                <a class="nav-link" href="gallery.html">Gallery</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Puppies</a>
+                <a class="nav-link" href="contact.html">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Gallery</a>
+                <a class="nav-link" href="https://www.instagram.com/bostonterrier_cutesy/">Instagram</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Instagram</a>
+                <a class="nav-link" href="https://www.facebook.com/inferiorsilesiacanis/">Facebook</a>
               </li>
             </ul>
           </div>
@@ -548,19 +548,23 @@
           alt="Exit icon"
           onclick="closeNav()"
         />
-        <div class="nav-element">Home</div>
-        <div class="nav-element">Our bostons</div>
-        <div class="nav-element">About us</div>
-        <div class="nav-element">Puppies</div>
-        <div class="nav-element">Gallery</div>
-        <div class="nav-element">Contact</div>
-        <div class="nav-element">Instagram</div>
+        <a href="index.html"><div class="nav-element">Home</div></a>
+        <a href="our-bostons.html"
+          ><div class="nav-element">Our bostons</div></a
+        >
+        <a href="gallery.html"><div class="nav-element">Gallery</div></a>
+        <a href="contact.html"><div class="nav-element">Contact</div></a>
+        <a href="https://www.instagram.com/bostonterrier_cutesy/"
+          ><div class="nav-element">Instagram</div></a
+        >
+        <a href="https://www.facebook.com/inferiorsilesiacanis/"><div class="nav-element">Facebook</div></a>
       </div>
     </div>
     <script>
       const btn = document.querySelector("#show-menu");
       const menu = document.querySelector(".menu");
       const container = document.querySelector(".all");
+      const hideMe = document.querySelector(".content");
       btn.addEventListener("click", () => {
         menu.classList.toggle("menu-active");
         menu.classList.toggle("menu-nonactive");
@@ -568,7 +572,7 @@
         container.classList.toggle("all-hide");
       });
       const containerHidden = document.querySelector(".all-active");
-      menu.addEventListener("click", () => {
+      hideMe.addEventListener("click", () => {
         container.classList.toggle("all-hide");
         menu.classList.toggle("menu-active");
         menu.classList.toggle("menu-nonactive");
