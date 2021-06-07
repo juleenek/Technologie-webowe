@@ -74,13 +74,28 @@ header {
   transition: 0.5s;
   overflow-x: hidden;
   width: 0;
-  grid-template-rows: 115px 30px repeat(7, 50px);
+  grid-template-rows: 115px 30px repeat(6, 60px);
   background-color: #1f1f1f;
   height: 100vh;
-  color: white;
+  color: #ffffff;
   justify-content: center;
   box-shadow: -4px 0px 11px 4px #0000003d;
   font-family: "Montserrat", sans-serif;
+}
+#side-nav a:link {
+  color: #ffffff;
+}
+#side-nav a:visited {
+  color: #ffffff;
+}
+.contact-container a:hover {
+  color: #a5a5a5;
+}
+#side-nav a:focus {
+  color: #ffffff;
+}
+#side-nav a:active {
+  color: #ffffff;
 }
 .logo-nav {
   width: 180px;
@@ -93,6 +108,9 @@ header {
   padding: 10px 0;
   width: 100%;
   padding-left: 20px;
+}
+.side-nav-el{
+  padding: 15px 0 0 30%;
 }
 .nav-element:hover {
   background-color: #343434;
