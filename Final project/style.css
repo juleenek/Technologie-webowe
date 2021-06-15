@@ -275,6 +275,9 @@ footer a:link, footer a,
   width: 100vw;
   border-bottom: 1px solid #bcbcbc;
 }
+.contact-us-end, .contact-us-end a:link, .contact-us-end a:visited, .contact-us-end a:focus, .contact-us-end a:active{
+  color: #000000;
+}
 
 /* === MEDIA QUERIES === */
 
@@ -454,12 +457,12 @@ footer a:link, footer a,
   .end-icon {
     display: none;
   }
-  #contact-us-end, #contact-us-end a:link, #contact-us-end a:visited, #contact-us-end a:focus, #contact-us-end a:active  {
+  .contact-us-end, .contact-us-end a:link, .contact-us-end a:visited, .contact-us-end a:focus, .contact-us-end a:active{
     color: #000000;
     font-size: 30px;
     transition: linear 0.3s;
   }
-  #contact-us-end:hover {
+  .contact-us-end:hover {
     text-shadow: 14px 12px 0px #f28c8c58, 25px 23px 0px #ffc4c446;
     transition: linear 0.3s;
   }
