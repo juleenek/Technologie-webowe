@@ -8,6 +8,11 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
 }
+body.preload *{
+  animation-duration: 0s !important;
+  -webkit-animation-duration: 0s !important;
+  transition:background-color 0s, opacity 0s, color 0s, width 0s, height 0s, padding 0s, margin 0s !important;}
+
 .container,
 .container-fluid,
 .container-lg,
@@ -26,11 +31,13 @@ body {
   justify-self: center;
   width: 100vw;
   background-color: #ffffff;
-
 }
 .logo {
   width: 160px;
 }
+
+/* === HEADER === */
+
 header {
   display: grid;
   grid-template-columns: 20fr 1fr 1fr;
@@ -66,6 +73,9 @@ header {
   width: 32px;
   margin-right: 15px;
 }
+
+/* === SIDE NAVIGATION FOR MOBILE === */
+
 #side-nav {
   display: grid;
   position: fixed;
@@ -74,7 +84,7 @@ header {
   transition: 0.5s;
   overflow-x: hidden;
   width: 0;
-  grid-template-rows: 115px 30px repeat(6, 60px);
+  grid-template-rows: 115px 40px repeat(6, 60px);
   background-color: #1f1f1f;
   height: 100vh;
   color: #ffffff;
@@ -82,20 +92,11 @@ header {
   box-shadow: -4px 0px 11px 4px #0000003d;
   font-family: "Montserrat", sans-serif;
 }
-#side-nav a:link {
-  color: #ffffff;
-}
-#side-nav a:visited {
+#side-nav a:link, #side-nav a:visited, #side-nav a:focus, #side-nav a:active {
   color: #ffffff;
 }
 .contact-container a:hover {
   color: #a5a5a5;
-}
-#side-nav a:focus {
-  color: #ffffff;
-}
-#side-nav a:active {
-  color: #ffffff;
 }
 .logo-nav {
   width: 180px;
@@ -104,13 +105,11 @@ header {
   border-bottom: 1px solid white;
 }
 .nav-element {
+  display: grid;
   align-self: center;
   padding: 10px 0;
   width: 100%;
-  padding-left: 20px;
-}
-.side-nav-el{
-  padding: 15px 0 0 30%;
+  padding-left: 40px;
 }
 .nav-element:hover {
   background-color: #343434;
@@ -120,6 +119,9 @@ header {
   width: 20px;
   padding-top: 10px;
 }
+
+/* === MAIN PAGE === */
+
 .carousel-item img {
   height: 30vh;
   object-fit: cover;
@@ -188,6 +190,16 @@ header {
 .about-us h2 {
   padding: 10px 0;
 }
+.about-us p a, .about-us p a:link, .about-us p a:visited, .about-us p a:focus, .about-us p a:active{
+  color: #f29c9c;
+  background-color: transparent;
+}
+.about-us p a:hover{
+  text-decoration: underline;
+}
+
+/* === END TEXT & FOOTER === */
+
 .loki-dog > img {
   height: 200px;
 }
@@ -249,8 +261,8 @@ footer {
   -webkit-animation: color-change-5x 8s linear infinite alternate both;
   animation: color-change-5x 8s linear infinite alternate both;
 }
-footer a:link,
-.inferior-footer {
+footer a:link, footer a,
+.inferior-footer, footer a:visited, footer a:focus, footer a:active {
   color: #ffc4c4;
   background-color: transparent;
   text-decoration: none;
@@ -264,7 +276,7 @@ footer a:link,
   border-bottom: 1px solid #bcbcbc;
 }
 
-/* ----- Media queries ----- */
+/* === MEDIA QUERIES === */
 
 @media (max-width: 767px) {
   #nav {
@@ -442,8 +454,14 @@ footer a:link,
   .end-icon {
     display: none;
   }
-  #contact-us-end {
+  #contact-us-end, #contact-us-end a:link, #contact-us-end a:visited, #contact-us-end a:focus, #contact-us-end a:active  {
+    color: #000000;
     font-size: 30px;
+    transition: linear 0.3s;
+  }
+  #contact-us-end:hover {
+    text-shadow: 14px 12px 0px #f28c8c58, 25px 23px 0px #ffc4c446;
+    transition: linear 0.3s;
   }
   #welcome-title {
     display: none;
@@ -476,7 +494,7 @@ footer a:link,
     margin-left: 35vw;
   }
 
-  /* ----- Web menu ----- */
+ /* === MENU SIDE FROM LEFT FOR WEBSITES === */
 
   #show-menu {
     display: flex;
@@ -555,7 +573,8 @@ a:link {
 a:visited {
   text-decoration: none;
 }
-/* ----- Our bostons ----- */
+
+/* === OUR BOSTONS SUBPAGE === */
 
 .boston-male-img,
 .boston-female-img {
@@ -622,7 +641,6 @@ a:visited {
   .img-female {
     width: 40vw;
   }
-  /* hov hov hov */
   .boston-male-img {
     -webkit-animation: img-male-in 1s;
     animation: img-male-in 1s;
@@ -742,8 +760,6 @@ a:visited {
       transform: translateX(0);
     }
   }
-  /* ---- */
-
   .boston-male {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -758,7 +774,7 @@ a:visited {
     padding-left: 20px;
   }
 
-  /* Female our bostons */
+  /* === FAMALE OUR BOSTONS === */
 
   .boston-female {
     grid-template-columns: 1fr 1fr;
@@ -830,7 +846,7 @@ a:visited {
     }
   }
 
-  /* for reverse female */
+    /* === REVERSE FAMALE OUR BOSTONS === */
 
   @-webkit-keyframes img-female-in {
     from {
@@ -874,7 +890,7 @@ a:visited {
   }
 }
 
-/* ---- contact ---- */
+  /* === CONTACT SUBPAGE === */
 
 .contact-container {
   display: grid;
@@ -938,31 +954,9 @@ textarea:focus {
   background-color: #000000;
   color: #ffffff;
   border: none;
-}
-.contact-container a:link {
-  color: #3f3f3f;
-}
-.contact-container a:visited {
-  color: #3f3f3f;
-}
-.contact-container a:hover {
-  color: #a5a5a5;
-}
-.contact-container a:focus {
-  color: #3f3f3f;
-}
-.contact-container a:active {
-  color: #3f3f3f;
-}
-.send-mess:hover {
-  animation: 1s arrowButton;
-}
-@keyframes arrowButton {
-  0% {
-    clip-path: polygon(0);
-  }
-  100% {
-    clip-path: polygon(
+  padding-right: 20px;
+  transition: linear 0.2s;
+  clip-path: polygon(
       0% 0,
       /* top left */ 0 0%,
       /* top left */ calc(100% - 20px) 0%,
@@ -972,7 +966,16 @@ textarea:focus {
       /* bottom right */ 0 100%,
       /* bottom left */ 0 calc(100% - 20px) /* bottom left */
     );
-  }
+}
+.send-mess:hover{
+  background-color: #4d4d4d;
+  transition: linear 0.2s;
+}
+.contact-container a:link, .contact-container a:visited, .contact-container a:focus, .contact-container a:active {
+  color: #3f3f3f;
+}
+.contact-container a:hover {
+  color: #a5a5a5;
 }
 .list-arrows {
   padding-top: 40px;
@@ -1052,7 +1055,7 @@ textarea:focus {
   }
 }
 
-/* --- gallery --- */
+  /* === GALLERY SUBPAGE === */
 
 .img-gallery1,
 .img-gallery2,

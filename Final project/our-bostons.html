@@ -35,7 +35,7 @@
     <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> 
     <a href='https://pngtree.com/so/fresh-leaves'>fresh leaves png from pngtree.com</a>
   --></head>
-  <body>
+  <body class="preload">
     <div class="menu menu-nonactive">
       <a href="index.html"><div class="nav-element">Home</div></a>
       <a href="our-bostons.html"><div class="nav-element">Our bostons</div></a>
@@ -493,7 +493,7 @@
               <img src="loki.png" alt="Photo of Loki" />
             </div>
             <div class="near-loki-dog">
-              <span>Contact us!</span>
+              <a href="contact.html"><span id="contact-us-end">Contact us!</span></a>
               <div class="end-icons">
                 <div class="end-icon">
                   <a href="https://www.facebook.com/alex.leenek"
@@ -548,16 +548,18 @@
           alt="Exit icon"
           onclick="closeNav()"
         />
-        <a href="index.html"><div class="nav-element side-nav-el">Home</div></a>
-        <a href="our-bostons.html"
-          ><div class="nav-element side-nav-el">Our bostons</div></a
-        >
-        <a href="gallery.html"><div class="nav-element side-nav-el">Gallery</div></a>
-        <a href="contact.html"><div class="nav-element side-nav-el">Contact</div></a>
-        <a href="https://www.instagram.com/bostonterrier_cutesy/"
-          ><div class="nav-element side-nav-el">Instagram</div></a
-        >
-        <a href="https://www.facebook.com/inferiorsilesiacanis/"><div class="nav-element side-nav-el">Facebook</div></a>
+        <div class="side-nav-elements">
+          <a href="index.html"><div class="nav-element side-nav-el">Home</div></a>
+          <a href="our-bostons.html"
+            ><div class="nav-element side-nav-el">Our bostons</div></a
+          >
+          <a href="gallery.html"><div class="nav-element side-nav-el">Gallery</div></a>
+          <a href="contact.html"><div class="nav-element side-nav-el">Contact</div></a>
+          <a href="https://www.instagram.com/bostonterrier_cutesy/"
+            ><div class="nav-element side-nav-el">Instagram</div></a
+          >
+          <a href="https://www.facebook.com/inferiorsilesiacanis/"><div class="nav-element side-nav-el">Facebook</div></a>
+        </div>
       </div>
     </div>
     <script>
@@ -578,20 +580,8 @@
         menu.classList.add("menu-nonactive");
         container.classList.remove("all-active");
       });
-      /*const boston = document.querySelector('.boston');
-      const maleImg = document.querySelector('.boston-male-img');
-      const maleText = document.querySelector('.male-text');
-      const femaleImg = document.querySelector('.boston-female-img');
-      const femaleText = document.querySelector('.female-text');
-      
-      $(".boston").hover(
-      function () {
-      $(maleImg).addClass("boston-male-img-hov");
-      $(maleText).addClass("male-text-hov");
-      $(femaleImg).addClass("boston-female-img-hov");
-      $(femaleText).addClass("female-text-hov");
-      },
-      ); */
+      setTimeout(function(){
+      document.body.className="";},700); // usunięcie klas w body
     </script>
   </body>
 </html>
